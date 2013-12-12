@@ -37,7 +37,7 @@ check_real_ip(){
 
 if test "${http_proxy+set}" != "set" ; then
         if [ "$DEBUG" == "1" ] ; then echo "http_proxy variable not set, trying Google..." ; fi
-                XYZ=`wget -q http://www.google.com -O /dev/null` > /dev/null 2>&1
+                XYZ=`wget -q http://www.google.com -O /dev/null` > /dev/null 2>&amp;1
                 RC=$?
                 if [ $RC != 0 ] ; then
                         if [ "$DEBUG" == "1" ] ; then echo "Unable to connect outbound, trying proxies..." ; fi
