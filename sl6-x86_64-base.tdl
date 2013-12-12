@@ -1,5 +1,5 @@
 <template>
-  <name>SL 6 x86_64 - Basic Install</name>
+  <name>sl6-x8664-base</name>
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-6</name>
@@ -9,16 +9,49 @@
       <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-iso/SL-63-x86_64-2012-08-02-Install-DVD.iso</iso>
     </install>
   </os>
-  <description>SL 6 - Basic Install</description>
+  <description>Base SL 6 for general-purpose VM usage with utilities.</description>
 
 <packages>
-    <package name='yum'/>
+    
+    <package name='bash'/>
     <package name='bind-utils'/>
-    <package name='telnet'/>
+    <package name='bind-utils'/>
+    <package name='curl'/>
     <package name='dhclient'/>
     <package name='lsof'/>
     <package name='ntp'/>
     <package name='openssh-clients'/>
+    <package name='openssh-server'/>
+    <package name='passwd'/>
+    <package name='rpm'/>
+    <package name='rpm-libs'/>
+    <package name='telnet'/>
+    <package name='unzip'/>
+    <package name='vim-enhanced'/>
+    <package name='wget'/>
+    <package name='yum'/>
+    <package name='zip'/>
 </packages>
+
+  <repositories>
+    <repository name='epel-6'>
+      <url>http://download.fedoraproject.org/pub/epel/6/$basearch</url>
+      <signed>no</signed>
+    </repository>
+    <repository name='sl63-x86_64-os'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-os-2013-04-05/x86_64</url>
+      <signed>no</signed>
+    </repository>
+    <repository name='sl63-x86_64-updates'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-updates-2013-04-05/x86_64</url>
+      <signed>no</signed>
+    </repository>
+	
+	<repository name = 'racf-grid-testing'>
+      <url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64</url>
+      <signed>no</signed>
+    </repository>
+
+  </repositories>
 
 </template>
