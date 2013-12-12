@@ -5,7 +5,7 @@
 # test success by checking domain of external IP for this host. 
 # 
 # dig myip.opendns.com @resolver1.opendns.com +short
-# wget -q -O - checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+# wget -q -O - checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/&lt;.*$//'
 #
 DEBUG=0
 
@@ -21,7 +21,7 @@ set_bnl_proxy(){
 
 
 check_real_ip(){
-        REALIP=`wget -q -O - checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' 2>/dev/null`
+        REALIP=`wget -q -O - checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/&lt;.*$//' 2>/dev/null`
         FN=`dig -x $REALIP +short 2>/dev/null `
         if [[ $FN =~ .*bnl.gov.* ]] ; then
                         if [ "$DEBUG" == "1" ] ; then echo "Matches bnl.gov." ; fi
