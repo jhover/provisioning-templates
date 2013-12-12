@@ -16,6 +16,7 @@
     <package name='bash'/>
     <package name='bind-utils'/>
     <package name='bind-utils'/>
+    <package name='cloudconfig'/>
     <package name='curl'/>
     <package name='dhclient'/>
     <package name='lsof'/>
@@ -38,10 +39,12 @@
       <url>http://download.fedoraproject.org/pub/epel/6/$basearch</url>
       <signed>no</signed>
     </repository>
+    
     <repository name='sl63-x86_64-os'>
       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-os-2013-04-05/x86_64</url>
       <signed>no</signed>
     </repository>
+    
     <repository name='sl63-x86_64-updates'>    
       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-updates-2013-04-05/x86_64</url>
       <signed>no</signed>
@@ -53,5 +56,29 @@
     </repository>
 
   </repositories>
+  
+  <commands>
+    <command name='enable-services'>
+    /sbin/chkconfig ntpd on
+    </command>
+    
+    <command name='disable-services'>
+    /sbin/chkconfig iptables off
+    /sbin/chkconfig ip6tables off
+    /sbin/chkconfig cups off
+    </command>
+      
+    <command name='enable-cloudconfig'>
+	chmod +x /etc/init.d/cloudconfig   
+	/sbin/chkconfig cloudconfig on
+    </command>
+    
+    <command name='setup-ssh'>
+    chown -R root:root /root/.ssh  
+    chmod -R go-rwx /root/.ssh
+    /sbin/chkconfig sshd on
+    </command>
+    
+  </commands> 
 
 </template>
