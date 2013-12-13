@@ -65,7 +65,6 @@
     <command name='disable-services'>
     /sbin/chkconfig iptables off
     /sbin/chkconfig ip6tables off
-    /sbin/chkconfig cups off
     </command>
       
     <command name='enable-cloudconfig'>
