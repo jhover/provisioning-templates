@@ -4,5 +4,4 @@ files:
   "/etc/rc.d/rc.local" : "rc.d/rc.local"      
   "/etc/ntp/step-tickers" : "ntp/step-tickers"
   "/etc/sysconfig/selinux" : "sysconfig/selinux"
-  "/etc/profile.d/proxy.sh" : "profile.d/proxy.sh"
   "/etc/security/limits.d/80-limits.conf" : "limits/80-limits.conf"
