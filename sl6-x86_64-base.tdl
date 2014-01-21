@@ -1,5 +1,5 @@
 <template>
-  <name>sl6-x8664-base</name>
+  <name>sl6-x86_64-base</name>
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-6</name>

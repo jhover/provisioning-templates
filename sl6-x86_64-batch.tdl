@@ -1,75 +1,79 @@
-name: sl6-x86_64-batch-dev
-summary: SL 6 for usage as execute machine with Condor Batch system. 
-release: 1
-release: 2
-os:
-  name: sl
-  version: 6
-  password: griddev
-  
-hardware:
-  cpus: 1
-  memory: 1024
-  partitions:
-    "/":
-      size: 5
+<template>
+  <name>sl6-x86_64-batch<\name>
+  <description>Adds Condor batch system to general VM</description>
 
-appliances:
-  - sl6-x86_64-base
-      
-packages:
-  - condor
+  <packages>  
+    <package name='condor'/>
+  </packages>
 
-repos:
-  - name: "racf-grid-development"
-    baseurl: "http://dev.racf.bnl.gov/yum/grid/development/rhel/6Workstation/x86_64"
+  <repositories>
+    <repository name='htcondor-development'>
+      <url>http://research.cs.wisc.edu/htcondor/yum/development/rhel6</url>
+      <signed>no</signed>
+    </repository>
+  </repositories
 
-default_repos: false # default is true
+  <commands>
+    <command name='adduser1'>
+      /usr/sbin/useradd slot1
+    </command>
+    <command name='adduser2'>
+      /usr/sbin/useradd slot2
+    </command>    
+    <command name='adduser3'>
+      /usr/sbin/useradd slot3
+    </command>
+    <command name='adduser4'>
+      /usr/sbin/useradd slot4
+    </command>
+    <command name='adduser5'>
+      /usr/sbin/useradd slot5
+    </command>
+    <command name='adduser6'>
+      /usr/sbin/useradd slot6
+    </command>
+    <command name='adduser7'>
+      /usr/sbin/useradd slot7
+    </command>    
+    <command name='adduser8'>
+      /usr/sbin/useradd slot8
+    </command>
 
-files:
-  "/etc":
-    - "condor/condor_config.local"
-    - "condor/config.d/50cloud_condor.config"
-    - "condor/config.d/60wnbase.config"
-    - "init.d/condorconfig"
-    - "sysconfig/condorconfig"
-#
-# This should be a temporary inclusion for EC2 spot price termination detection. 
-#
-    - "init.d/detect-shutdowns"
-
-
-# This is an empty file in SVN. You'll need to add your actual password before building.
-# Or, arrange some other method (UserData or script) to set it. 
-    - "condor/password_file"
-
-  "/usr/libexec":
-    - "jobwrapper.sh"
-      
-post:
-  base: 
-# Condor setup    
-    - "/usr/sbin/useradd slot1"
-    - "/usr/sbin/useradd slot2"
-    - "/usr/sbin/useradd slot3"
-    - "/usr/sbin/useradd slot4"
-    - "/usr/sbin/useradd slot5"
-    - "/usr/sbin/useradd slot6"
-    - "/usr/sbin/useradd slot7"
-    - "/usr/sbin/useradd slot8"
-    - "mkdir -p /home/condor/execute"
-    - "chown -R condor:condor /home/condor"
-    - "chmod ugo+rwx /home/condor/execute"
-    - "chmod +t /home/condor/execute"
-    - "chown root:root /usr/libexec/jobwrapper.sh"    
-    - "chmod +x /usr/libexec/jobwrapper.sh"
-    - "chown root:root /etc/condor/password_file"
-    - "chmod o-rwx /etc/condor/password_file"
-    - "chmod +x /etc/init.d/condorconfig"
-    - "/sbin/chkconfig condor on"
-    - "/sbin/chkconfig condorconfig on"
-#
-# This should be a temporary inclusion for EC2 spot price termination detection. 
-#
-    - "/sbin/chkconfig detect-shutdowns on"
+    <command name='condor1'>
+      mkdir -p /home/condor/execute
+    </command>
+    <command name='condor2'>
+      chown -R condor:condor /home/condor
+    </command>
+    <command name='condor3'>
+      chmod ugo+rwx /home/condor/execute
+    </command>
+    <command name='condor4'>
+      chmod +t /home/condor/execute
+    </command>
+    <command name='condor5'>
+      chown root:root /usr/libexec/jobwrapper.sh
+    </command>
+    <command name='condor6'>
+      chmod +x /usr/libexec/jobwrapper.sh
+    </command>
+    <command name='condor7'>
+      chown root:root /etc/condor/password_file
+    </command>
+    <command name='condor8'>
+      chmod o-rwx /etc/condor/password_file
+    </command>
+    <command name='condor9'>
+      chmod +x /etc/init.d/condorconfig
+    </command>
+    <command name='condor10'>
+      /sbin/chkconfig condor on
+    </command>
+    <command name='condor11'>
+      /sbin/chkconfig condorconfig on
+    </command>
+    <command name='condor12'>
+      /sbin/chkconfig detect-shutdowns on
+    </command>
+</template>
 
