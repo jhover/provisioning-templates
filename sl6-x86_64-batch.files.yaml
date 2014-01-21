@@ -1,7 +1,7 @@
 files:
   "/etc/condor/condor_config.local": "condor/condor_config.local"
-  "/etc/condor/config.d/50cloud_condor.config" :
-  "/etc/condor/config.d/60wnbase.config" :
+  "/etc/condor/config.d/50cloud_condor.config" : "condor/50cloud_condor.config"
+  "/etc/condor/config.d/60wnbase.config" :  "condor/60wnbase.config"
   "/etc/init.d/condorconfig" :  ""condor/condorconfig.init"
   "/etc/sysconfig/condorconfig" : "condor/condorconfig.sysconfig"
   "/etc/init.d/detect-shutdowns" : "condor/detect-shutdowns"
