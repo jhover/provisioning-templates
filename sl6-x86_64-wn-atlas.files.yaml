@@ -19,4 +19,4 @@ files:
   "/etc/profile.d/atlas.sh" : "profile.d/atlas.sh"
   "/etc/condor/config.d/63wn_atlas.config" :  "condor/63wn_atlas.config"
   "/home/osg/app/atlas_app/copysetup.sh" : "copysetup.sh"
-  "/home/osg/app/atlas_app/local": "setup.sh"  
+  "/home/osg/app/atlas_app/local/setup.sh": "setup.sh"  
