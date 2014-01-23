@@ -1,9 +1,58 @@
 <template>
   <name>sl6-x86_64-wn-atlas</name>
-  <description>Adds Condor batch system to general VM</description>
+  <description>Adds ATLAS worker node requirements to general VM</description>
 
   <packages>  
-    <package name='condor'/>
+    <package name='bc'/>
+    <package name='blas'/>
+    <package name='blas.i686'/>
+    <package name='blas-devel'/>
+    <package name='blas-devel.i686'/>
+    <package name='compat-db.i686'/>
+    <package name='compat-db'/>
+    <package name='compat-openldap.i686'/>     
+    <package name='compat-openldap'/>  
+    <package name='compat-readline5'/>
+    <package name='compat-readline5.i686'/>
+    <package name='cvmfs'/>
+    <package name='fuse'/>
+    <package name='lfc-python'/>
+    <package name='ncurses'/>
+    <package name='ncurses-libs.i686'/>  
+    <package name='compat-glibc'/>   
+    <package name='compat-glibc-headers'/>     
+    <package name='compat-libf2c-34.i686'/>     
+    <package name='compat-libf2c-34'/>   
+    <package name='libgcc'/>
+    <package name='libgcc.i686'/>
+    <package name='freetype'/>
+    <package name='freetype.i686'/>
+    <package name='ghostscript'/>
+    <package name='ghostscript.i686'/>
+    <package name='giflib'/>
+    <package name='giflib.i686'/>
+    <package name='glibc.i686'/>
+    <package name='HEP_OSlibs_SL6'/>     
+    <package name='libaio'/>
+    <package name='libaio.i686'/>
+    <package name='lapack.i686'/>               
+    <package name='lapack'/>
+    <package name='libevent-devel'/>    
+    <package name='compat-libgfortran-41.i686'/>     
+    <package name='compat-libgfortran-41'/>
+    <package name='libgfortran.i686'/>     
+    <package name='libgfortran'/>
+    <package name='libxml2-devel'/>     
+    <package name='libxml2-devel.i686'/>    
+    <package name='libXpm.i686'/>   
+    <package name='libXpm'/>    
+    <package name='openssl098e.i686'/>      
+    <package name='openssl098e'/>    
+    <package name='openssl.i686'/>
+    <package name='procmail'/>
+    <package name='sharutils'/>
+    <package name='sqlite'/>
+    <package name='sqlite.i686'/>    
   </packages>
 
   <repositories>
@@ -43,4 +92,3 @@
    </command>        
   </commands>
 </template>
-
