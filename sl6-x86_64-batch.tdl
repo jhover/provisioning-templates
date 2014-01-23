@@ -72,9 +72,6 @@
     <command name='condor11'>
       /sbin/chkconfig condorconfig on
     </command>
-    <command name='condor12'>
-      /sbin/chkconfig detect-shutdowns on
-    </command>
    </commands>
 </template>
 
