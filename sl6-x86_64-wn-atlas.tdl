@@ -1,0 +1,46 @@
+<template>
+  <name>sl6-x86_64-wn-atlas</name>
+  <description>Adds Condor batch system to general VM</description>
+
+  <packages>  
+    <package name='condor'/>
+  </packages>
+
+  <repositories>
+    <repository name='cmvfs'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/cvmfs-2013-04-09/x86_64/</url>
+      <signed>no</signed>
+    </repository>
+
+    <repository name='cmvfs'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/cvmfs-2013-04-09/x86_64/</url>
+      <signed>no</signed>
+    </repository>
+  </repositories>
+
+  <commands>
+    <command name='atlas1'>
+      chmod +x /etc/sysconfig/modules/fuse.modules
+    </command>
+    
+   <command name='atlas2'>
+      chmod +x /home/osg/app/atlas_app/copysetup.sh
+    </command>
+   <command name='atlas3'>
+      mkdir -p /home/cvmfs
+    </command>
+    
+   <command name='atlas4'>
+     chown -R cvmfs:cvmfs /home/cvmfs
+    </command>
+    
+   <command name='atlas5'>
+     /sbin/chkconfig cvmfs on
+    </command>
+    
+   <command name='atlas6'>
+     /bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel
+   </command>        
+  </commands>
+</template>
+
