@@ -35,10 +35,12 @@
 </packages>
 
   <repositories>
+    <!-- 
     <repository name='epel-6'>
       <url>http://download.fedoraproject.org/pub/epel/6/$basearch</url>
       <signed>no</signed>
     </repository>
+    -->
     
     <repository name='sl63-x86_64-os'>
       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-os-2013-04-05/x86_64</url>
