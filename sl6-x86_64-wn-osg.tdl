@@ -12,7 +12,7 @@
   <repositories>
 
     <repository name='osg-release-x86_64'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/osg-release-2013-04-09/x86_64</url>
+      <url>http://repo.grid.iu.edu/osg/3.2/el6/release/x86_64/</url>
       <signed>no</signed>
     </repository>
 
