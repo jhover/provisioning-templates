@@ -11,7 +11,7 @@
       <url>http://research.cs.wisc.edu/htcondor/yum/development/rhel6</url>
       <signed>no</signed>
     </repository>
-  </repositories
+  </repositories>
 
   <commands>
     <command name='adduser1'>
