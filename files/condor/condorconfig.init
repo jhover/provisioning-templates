@@ -30,16 +30,13 @@ config_collector() {
 config_attrs() {
 	# If available, publish public ip and instanceid via Startd
 	# Seen to work on EC2 and Openstack v4
-   cat > /etc/condor/config.d/92cloudattrs.config <<EOF
-EC2PublicIP="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-ipv4)"
-EC2PublicDNS="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-hostname)"
-EC2InstanceID="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id)"
-
-STARTD_EXPRS=\$(STARTD_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS
-MASTER_EXPRS=\$(MASTER_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS
-EOF
-   chmod a+r /etc/condor/config.d/92cloudattrs.config 
-
+	attrfile=/etc/condor/config.d/92cloudattrs.config
+	echo 'EC2PublicIP="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-ipv4)"' > $attrfile
+	echo 'EC2PublicDNS="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-hostname)"' >> $attrfile
+	echo 'EC2InstanceID="$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id)"' >> $attrfile
+	echo 'STARTD_EXPRS=\$(STARTD_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS' >> $attrfile
+	echo 'MASTER_EXPRS=\$(MASTER_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS' >> $attrfile
+	chmod a+r $attrfile
 }
 
 calc_slots() {
