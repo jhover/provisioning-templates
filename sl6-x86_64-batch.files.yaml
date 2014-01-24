@@ -6,4 +6,4 @@ files:
   "/etc/sysconfig/condorconfig" : "condor/condorconfig.sysconfig"
 #  "/etc/init.d/detect-shutdowns" : "condor/detect-shutdowns"
   "/usr/libexec/jobwrapper.sh" : "condor/jobwrapper.sh"
-  "/etc/condor/password_file" : "condor/password_file"    
+  "/etc/condor/password" : "condor/password"    
