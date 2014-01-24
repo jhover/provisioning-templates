@@ -5,3 +5,6 @@ files:
   "/etc/ntp/step-tickers" : "ntp/step-tickers"
   "/etc/sysconfig/selinux" : "sysconfig/selinux"
   "/etc/security/limits.d/80-limits.conf" : "limits/80-limits.conf"
+  "/etc/sysconfig/cloudconfig" : "sysconfig/cloudconfig"
+
+  
