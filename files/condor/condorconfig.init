@@ -19,6 +19,7 @@ fi
 config_collector() {
     # Pick a random collector to use
 	collector_config=/etc/condor/config.d/90collector.config
+	echo > $collector_config
 	port_list=$CONDOR_PORT_LIST
 	let seed=`date +%s`+$$
 	echo $port_list | awk "BEGIN{srand($seed)}"'{split($0,g,","); for (i in g) print rand() "\tCOLLECTOR_PORT=" g[i]}' |sort -n|awk '{print $2}'|tail -1 >$collector_config
