@@ -4,6 +4,5 @@ files:
   "/etc/condor/config.d/60wnbase.config" :  "condor/60wnbase.config"
   "/etc/init.d/condorconfig" :  "condor/condorconfig.init"
   "/etc/sysconfig/condorconfig" : "condor/condorconfig.sysconfig"
-#  "/etc/init.d/detect-shutdowns" : "condor/detect-shutdowns"
   "/usr/libexec/jobwrapper.sh" : "condor/jobwrapper.sh"
   "/etc/condor/password" : "condor/password"    
