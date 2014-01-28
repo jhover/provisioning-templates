@@ -7,8 +7,8 @@
   </packages>
 
   <repositories>
-    <repository name='htcondor-development'>
-      <url>http://research.cs.wisc.edu/htcondor/yum/development/rhel6</url>
+    <repository name='htcondor-stable'>
+      <url>http://research.cs.wisc.edu/htcondor/yum/stable/rhel6</url>
       <signed>no</signed>
     </repository>
   </repositories>
