@@ -61,10 +61,10 @@
       <signed>no</signed>
     </repository>
 
-    <repository name='cmvfs'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/cvmfs-2013-04-09/x86_64/</url>
+    <repository name='racf-grid-testing'>
+      <url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64/</url>
       <signed>no</signed>
-    </repository>
+    </repository>        
   </repositories>
 
   <commands>
