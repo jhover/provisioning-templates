@@ -68,26 +68,12 @@
   </repositories>
 
   <commands>
-    <command name='atlas1'>
+    <command name='atlassetup'>
       chmod +x /etc/sysconfig/modules/fuse.modules
-    </command>
-    
-   <command name='atlas2'>
       chmod +x /home/osg/app/atlas_app/copysetup.sh
-    </command>
-   <command name='atlas3'>
       mkdir -p /home/cvmfs
-    </command>
-    
-   <command name='atlas4'>
      chown -R cvmfs:cvmfs /home/cvmfs
-    </command>
-    
-   <command name='atlas5'>
      /sbin/chkconfig cvmfs on
-    </command>
-    
-   <command name='atlas6'>
      /bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel
    </command>        
   </commands>

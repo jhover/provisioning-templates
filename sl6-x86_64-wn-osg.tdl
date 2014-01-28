@@ -24,10 +24,8 @@
   </repositories>
 
   <commands>
-    <command name='osg1'>
+    <command name='osgsetup'>
       /sbin/chkconfig fetch-crl-boot on
-    </command>
-    <command name='osg2'>
       /sbin/chkconfig fetch-crl-cron on
     </command>    
   </commands>
