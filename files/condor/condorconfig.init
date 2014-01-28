@@ -77,13 +77,12 @@ config_slots() {
 }
 
 config_password() {
-	cat /etc/condor/password | condor_store_cred -f /etc/condor/password_file
+	CPASSWD=`cat /etc/condor/password`
+	/usr/sbin/condor_store_cred -p $CPASSWD -f /etc/condor/password_file
 	chmod ugo-x /etc/condor/password_file
 	chmod go-wx /etc/condor/password_file
 	chmod o-r /etc/condor/password_file
-
 }
-
 
 start() {
 	echo -n $"Setting random collector, slots, and auth: "

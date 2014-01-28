@@ -14,62 +14,28 @@
   </repositories>
 
   <commands>
-    <command name='adduser1'>
+    <command name='addusers'>
       /usr/sbin/useradd slot1
-    </command>
-    <command name='adduser2'>
       /usr/sbin/useradd slot2
-    </command>    
-    <command name='adduser3'>
       /usr/sbin/useradd slot3
-    </command>
-    <command name='adduser4'>
       /usr/sbin/useradd slot4
-    </command>
-    <command name='adduser5'>
       /usr/sbin/useradd slot5
-    </command>
-    <command name='adduser6'>
       /usr/sbin/useradd slot6
-    </command>
-    <command name='adduser7'>
       /usr/sbin/useradd slot7
-    </command>    
-    <command name='adduser8'>
       /usr/sbin/useradd slot8
     </command>
 
-    <command name='condor1'>
+    <command name='condorsetup'>
       mkdir -p /home/condor/execute
-    </command>
-    <command name='condor2'>
       chown -R condor:condor /home/condor
-    </command>
-    <command name='condor3'>
       chmod ugo+rwx /home/condor/execute
-    </command>
-    <command name='condor4'>
       chmod +t /home/condor/execute
-    </command>
-    <command name='condor5'>
       chown root:root /usr/libexec/jobwrapper.sh
-    </command>
-    <command name='condor6'>
       chmod +x /usr/libexec/jobwrapper.sh
-    </command>
-    <command name='condor7'>
       chown root:root /etc/condor/password_file
-    </command>
-    <command name='condor8'>
       chmod o-rwx /etc/condor/password_file
-    </command>
-    <command name='condor9'>
       chmod +x /etc/init.d/condorconfig
-    </command>
-    <command name='condor10'>
       /sbin/chkconfig condor on
-    </command>
-    <command name='condor11'>
       /sbin/chkconfig condorconfig on
     </command>
    </commands>
