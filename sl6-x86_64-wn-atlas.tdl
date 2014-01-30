@@ -72,7 +72,8 @@
       chmod +x /etc/sysconfig/modules/fuse.modules
       chmod +x /home/osg/app/atlas_app/copysetup.sh
       mkdir -p /home/cvmfs
-     chown -R cvmfs:cvmfs /home/cvmfs
+      mkdir -p /home/cvmfs/shared
+      chown -R cvmfs:cvmfs /home/cvmfs
      /sbin/chkconfig cvmfs on
      /bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel
    </command>        

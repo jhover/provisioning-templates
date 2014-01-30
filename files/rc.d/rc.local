@@ -9,22 +9,12 @@ if [ "${SN}x" == "localhostx" ] ; then
    hostname $RANDOM.localdomain
 fi
 
-# Set external DNS names for BNL servers...
-#
-# As of 12/2012 should not be necessary at BNL
-#
-#HOSTS=/etc/hosts
-#if [[ -n $(grep "lfc.usatlas.bnl.gov" $HOSTS) ]] ; then
-#   : # do nothing
-#else
-#   echo "192.12.15.30   lfc.usatlas.bnl.gov" >> $HOSTS
-#fi
-#
-#if [[ -n $(grep "dcsrm.usatlas.bnl.gov" $HOSTS) ]] ; then
-#   : # do nothing
-#else
-#   echo "192.12.15.2   dcsrm.usatlas.bnl.gov" >> $HOSTS
-#fi
+
+if [ ! -d /root/.ssh ]; then
+  mkdir -p /root/.ssh
+  cp /etc/ssh/authorized_keys /root/.ssh/
+  chmod go-rwx /root/.ssh
+fi
 
 touch /var/lock/subsys/local
 

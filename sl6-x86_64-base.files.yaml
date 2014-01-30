@@ -1,5 +1,5 @@
 files:
-  "/root/.ssh/authorized_keys": "ssh/authorized_keys"
+  "/etc/ssh/authorized_keys": "ssh/authorized_keys"
   "/etc/ssh/sshd_config"   : "ssh/sshd_config"
   "/etc/rc.d/rc.local" : "rc.d/rc.local"      
   "/etc/ntp/step-tickers" : "ntp/step-tickers"

@@ -6,6 +6,7 @@ files:
   "/etc/cvmfs/config.d/atlas-nightlies.cern.ch.conf" : "cvmfs-2.1/config.d/atlas-nightlies.cern.ch.conf"
   "/etc/cvmfs/config.d/grid.cern.ch.conf" : "cvmfs-2.1/config.d/grid.cern.ch.conf"
   "/etc/cvmfs/config.d/cms.cern.ch.conf" : "cvmfs-2.1/config.d/cms.cern.ch.conf"
+  "/etc/cvmfs/keys/opensciencegrid.org.pub" : "cvmfs-2.1/keys/opensciencegrid.org.pub"
   "/etc/auto.master" :  "auto.master"
   "/etc/fuse.conf" : "fuse.conf"
   "/etc/profile.d/atlas.sh" : "profile.d/atlas.sh"
