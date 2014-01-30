@@ -6,5 +6,5 @@ export FRONTIER_LOG_LEVEL=debug
 export FRONTIER_LOG_FILE=frontier_client.log
 #export FRONTIER_READTIMEOUTSECS=60
 # allow local override at end
-[ -f $OSG_APP/atlas_app/local/setup.sh.local ] &amp;&amp; source $OSG_APP/atlas_app/local/setup.sh.local
+[ -f $OSG_APP/atlas_app/local/setup.sh.local ] && source $OSG_APP/atlas_app/local/setup.sh.local
 export VOMS_PROXY_INFO_DONT_VERIFY_AC="true"

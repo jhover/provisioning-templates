@@ -14,7 +14,7 @@
 . /etc/init.d/functions
 
 # pull in sysconfig settings
-[ -f /etc/sysconfig/cloudconfig ] &amp;&amp; . /etc/sysconfig/cloudconfig
+[ -f /etc/sysconfig/cloudconfig ] && . /etc/sysconfig/cloudconfig
 
 RETVAL=0
 
@@ -34,11 +34,11 @@ start() {
 			echo "Creating filesystem..." >> $LOGFILE
 			mkfs.ext3 -F -L home /dev/$VD | tee $LOGFILE
 			echo "Mounting and mirroring /home..."
-			echo "Mounting and mirroring /home..." >> $LOGFILE  2>&amp;1
-			mv -v /home /home.orig >> $LOGFILE  2>&amp;1
-			mkdir -v /home >> $LOGFILE  2>&amp;1
-			mount -t ext3 /dev/$VD /home >> $LOGFILE  2>&amp;1
-			cp -avr /home.orig/* /home   >> $LOGFILE  2>&amp;1
+			echo "Mounting and mirroring /home..." >> $LOGFILE  2>&1
+			mv -v /home /home.orig >> $LOGFILE  2>&1
+			mkdir -v /home >> $LOGFILE  2>&1
+			mount -t ext3 /dev/$VD /home >> $LOGFILE  2>&1
+			cp -avr /home.orig/* /home   >> $LOGFILE  2>&1
 			d=`date`
 			echo "Done with /dev/$VD: $d"
 			echo "Done with /dev/$VD: $d" >> $LOGFILE 
