@@ -1,0 +1,15 @@
+[root@acas1864 etc]# rpm -ql cvmfs-keys
+/etc/cvmfs
+/etc/cvmfs/keys
+/etc/cvmfs/keys/cern-it1.cern.ch.pub
+/etc/cvmfs/keys/cern-it2.cern.ch.pub
+/etc/cvmfs/keys/cern-it3.cern.ch.pub
+/etc/cvmfs/keys/cern.ch.pub
+
+[root@acas1864 etc]# rpm -ql cvmfs | grep etc
+/etc/auto.cvmfs
+/etc/cvmfs/config.d
+/etc/cvmfs/config.sh
+/etc/cvmfs/default.conf
+/etc/cvmfs/domain.d
+/etc/cvmfs/domain.d/cern.ch.conf
