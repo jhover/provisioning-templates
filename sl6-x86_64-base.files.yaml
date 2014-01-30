@@ -3,7 +3,7 @@ files:
   "/etc/ssh/default_sshd_config"   : "ssh/sshd_config"
   "/etc/rc.d/rc.local" : "rc.d/rc.local"      
   "/etc/ntp/step-tickers" : "ntp/step-tickers"
-  "/etc/sysconfig/selinux" : "sysconfig/selinux"
+  "/etc/selinu/config" : "sysconfig/selinux"
   "/etc/security/limits.d/80-limits.conf" : "limits/80-limits.conf"
   "/etc/init.d/cloudconfig" : "init.d/cloudconfig"
   "/etc/sysconfig/cloudconfig" : "sysconfig/cloudconfig"
