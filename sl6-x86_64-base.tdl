@@ -67,7 +67,13 @@
     chmod -R go-rwx /root/.ssh
     /sbin/chkconfig sshd on
     </command>
-    
+
+    <command name='disable-default-repos'>
+    /usr/bin/yum-config-manager --disable sl
+    /usr/bin/yum-config-manager --disable sl-security
+    </command>
+
+   
   </commands> 
 
 </template>

@@ -16,8 +16,15 @@
       <signed>no</signed>
     </repository>
 
+	<!--
     <repository name='osg-epel-deps'>
       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/osg-epel-deps-2013-04-09/x86_64</url>
+      <signed>no</signed>
+    </repository>
+    -->
+    
+    <repository name='epel'>
+       <url>http://mirror.bnl.gov/fedora-epel/6/x86_64</url>
       <signed>no</signed>
     </repository>
 
