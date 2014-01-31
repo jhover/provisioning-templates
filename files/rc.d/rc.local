@@ -1,21 +1,11 @@
 #!/bin/bash
-#
-# Give this host a random hostname if it doesn't get something
-# unique from DHCP. 
-#
 
-SN=`hostname --short`
-if [ "${SN}x" == "localhostx" ] ; then
-   hostname $RANDOM.localdomain
-fi
-
-if [ ! -d /root/.ssh ]; then
-  mkdir -p /root/.ssh
-  cp /etc/ssh/default_authorized_keys /root/.ssh/
-  chmod go-rwx /root/.ssh
-  cp /etc/ssh/default_sshd_config /etc/ssh/sshd_config
-  service sshd restart
-fi
+# Run all cloudconfig fixes every time. 
+for i in /etc/cloudconfig/fixes.d/*.sh; do
+    if [ -r "$i" ]; then
+        . "$i"
+    fi
+done
 
 touch /var/lock/subsys/local
 
