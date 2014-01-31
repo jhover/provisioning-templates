@@ -3,7 +3,7 @@
 # Run all cloudconfig fixes every time. 
 for i in /etc/cloudconfig/fixes.d/*.sh; do
     if [ -r "$i" ]; then
-        . "$i"
+        . "$i" >> /var/log/cloudconfig.log
     fi
 done
 
