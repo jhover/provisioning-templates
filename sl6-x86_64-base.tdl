@@ -50,6 +50,7 @@
   <commands>
     <command name='basesetup'>
     chmod +x /etc/rc.d/rc.local
+    bash /etc/cloudconfig/fixes.d/fix-selinux.sh
     /sbin/chkconfig ntpd on
     /sbin/chkconfig iptables off
     /sbin/chkconfig ip6tables off
