@@ -5,9 +5,10 @@ files:
   "/etc/ntp/step-tickers" : "ntp/step-tickers"
   "/etc/security/limits.d/80-limits.conf" : "limits/80-limits.conf"
   "/etc/cloudconfig/selinux.sysconfig" : "sysconfig/selinux"
+  "/etc/selinux/config" : "sysconfig/selinux"
   "/etc/init.d/cloudconfig" : "cloudconfig/cloudconfig.init"
   "/etc/sysconfig/cloudconfig" : "cloudconfig/cloudconfig.sysconfig"
   "/etc/cloudconfig/fixes.d/fix-hostname.sh" : "cloudconfig/fixes.d/fix-hostname.sh"
-  "/etc/cloudconfig/fixes.d/fix-hostname.sh" : "cloudconfig/fixes.d/fix-ssh.sh"
-  "/etc/cloudconfig/fixes.d/fix-hostname.sh" : "cloudconfig/fixes.d/fix-selinux.sh"
+  "/etc/cloudconfig/fixes.d/fix-ssh.sh" : "cloudconfig/fixes.d/fix-ssh.sh"
+  "/etc/cloudconfig/fixes.d/fix-selinux.sh" : "cloudconfig/fixes.d/fix-selinux.sh"
   
