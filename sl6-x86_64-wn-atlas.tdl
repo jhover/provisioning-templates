@@ -74,6 +74,7 @@
       mkdir -p /home/cvmfs
       mkdir -p /home/cvmfs/shared
       chown -R cvmfs:cvmfs /home/cvmfs
+      chmod -R ugo+rx /etc/cvmfs
      /sbin/chkconfig cvmfs on
      /bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel
    </command>        
