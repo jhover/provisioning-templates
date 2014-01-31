@@ -27,6 +27,7 @@ else
    done
   IFS=$OLD_IFS     # restore default field separator 
 
+fi
 
 # unconditionally fix sshd_config and restart. 
 cp /etc/ssh/default_sshd_config /etc/ssh/sshd_config
