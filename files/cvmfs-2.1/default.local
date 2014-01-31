@@ -1,4 +1,5 @@
-CVMFS_REPOSITORIES=alice.cern.ch,atlas.cern.ch,atlas-condb.cern.ch,atlas-nightlies.cern.ch,boss.cern.ch,cms.cern.ch,geant4.cern.ch,grid.cern.ch,lhcb.cern.ch,na61.cern.ch,oasis.opensciencegrid.org,sft.cern.ch
+CVMFS_REPOSITORIES=atlas.cern.ch,atlas-condb.cern.ch,atlas-nightlies.cern.ch,cms.cern.ch,geant4.cern.ch,oasis.opensciencegrid.org
+# CVMFS_REPOSITORIES=alice.cern.ch,atlas.cern.ch,atlas-condb.cern.ch,atlas-nightlies.cern.ch,boss.cern.ch,cms.cern.ch,geant4.cern.ch,grid.cern.ch,lhcb.cern.ch,na61.cern.ch,oasis.opensciencegrid.org,sft.cern.ch
 CVMFS_HTTP_PROXY="http://frontier-cache.racf.bnl.gov:3128|http://frontier-cache.racf.bnl.gov:3128;DIRECT"
 CVMFS_CACHE_BASE=/home/cvmfs
 CVMFS_QUOTA_LIMIT=50000
