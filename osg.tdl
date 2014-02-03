@@ -1,5 +1,5 @@
 <template>
-  <name>sl6-x86_64-wn-osg</name>
+  <name>osg</name>
   <description>Adds OSG WN config general VM</description>
 
   <packages>  

@@ -1,5 +1,5 @@
 <template>
-  <name>sl6-x86_64-wn-atlas</name>
+  <name>atlas</name>
   <description>Adds ATLAS worker node requirements to general VM</description>
 
   <packages>  

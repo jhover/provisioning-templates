@@ -1,5 +1,5 @@
 <template>
-  <name>sl6-x86_64-batch</name>
+  <name>condor-stable</name>
   <description>Adds Condor batch system to general VM</description>
 
   <packages>  
