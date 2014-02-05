@@ -77,6 +77,7 @@
       chown -R cvmfs:cvmfs /etc/cvmfs
       chmod -R ugo+rx /etc/cvmfs
       chmod -R ugo+rx /home/cvmfs
+      chmod -R ugo+r /etc/cvmfs 
      /sbin/chkconfig cvmfs on
      /bin/ln -s /cvmfs/atlas.cern.ch/repo/sw /home/osg/app/atlas_app/atlas_rel
    </command>        

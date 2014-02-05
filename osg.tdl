@@ -36,6 +36,7 @@
       /sbin/chkconfig fetch-crl-cron on
       mkdir -p /home/osg/app
       mkdir -p /home/osg/data
+      chmod ugo+r /etc/profile.d/osg.sh
       chmod ugo+rwx /home/osg/app
       chmod ugo+rwx /home/osg/data
     </command>    

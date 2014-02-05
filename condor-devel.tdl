@@ -30,11 +30,13 @@
       chown -R condor:condor /home/condor
       chmod ugo+rwx /home/condor/execute
       chmod +t /home/condor/execute
-      chown root:root /usr/libexec/jobwrapper.sh
       chmod +x /usr/libexec/jobwrapper.sh
       chown root:root /etc/condor/password_file
       chmod o-rwx /etc/condor/password_file
       chmod +x /etc/init.d/condorconfig
+      chown root:root /usr/libexec/jobwrapper.sh
+      chmod -R ugo+r /etc/condor/config.d
+      chmod ugo+rx /usr/libexec/jobwrapper.sh
       /sbin/chkconfig condor on
       /sbin/chkconfig condorconfig on
     </command>
