@@ -76,7 +76,7 @@
       chown -R cvmfs:cvmfs /home/cvmfs
       chown -R cvmfs:cvmfs /etc/cvmfs
       chmod -R ugo+rx /etc/cvmfs
-      chmod -R ugo+rx /etc/profile.d/atlas.sh
+      chmod -R ugo+r /etc/profile.d/atlas.sh
       chmod -R ugo+rx /home/cvmfs
       chmod -R ugo+r /etc/cvmfs 
      /sbin/chkconfig cvmfs on
