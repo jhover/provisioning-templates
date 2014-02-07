@@ -1,3 +1,3 @@
 files:
-  "/etc/profile.d/osg.sh" : "profile.d/osg.sh"
+  "/etc/profile.d/osg.sh" : "osg/osg-profile.sh"
    
