@@ -71,6 +71,7 @@
     <command name='atlassetup'>
       chmod +x /etc/sysconfig/modules/fuse.modules
       chmod ugo+rx /home/osg/app/atlas_app/copysetup.sh
+      chmod ugo+rx /home/osg/app/atlas_app/local/setup.sh
       mkdir -p /home/cvmfs
       mkdir -p /home/cvmfs/shared
       chown -R cvmfs:cvmfs /home/cvmfs
