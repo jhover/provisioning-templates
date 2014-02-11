@@ -2,7 +2,7 @@ files:
   "/etc/sysconfig/modules/fuse.modules" : "sysconfig/modules/fuse.modules"
   "/etc/cvmfs/default.local" : "cvmfs-2.1/default.local"
   "/etc/cvmfs/domain.d/cern.ch.local" : "cvmfs-2.1/domain.d/cern.ch.local"
-  "/etc/cvmfs/domain.d/opensciencegid.org.local" : "cvmfs-2.1/domain.d/opensciencegrid.org.local"
+  "/etc/cvmfs/domain.d/opensciencegrid.org.local" : "cvmfs-2.1/domain.d/opensciencegrid.org.local"
   "/etc/cvmfs/config.d/atlas-nightlies.cern.ch.conf" : "cvmfs-2.1/config.d/atlas-nightlies.cern.ch.conf"
   "/etc/cvmfs/config.d/cms.cern.ch.conf" : "cvmfs-2.1/config.d/cms.cern.ch.conf"
   "/etc/cvmfs/keys/opensciencegrid.org.pub" : "cvmfs-2.1/keys/opensciencegrid.org.pub"
