@@ -50,15 +50,14 @@
   <commands>
     <command name='basesetup'>
     chmod +x /etc/rc.d/rc.local
-    bash /etc/cloudconfig/fixes.d/fix-selinux.sh
-    /sbin/chkconfig ntpd on
-    /sbin/chkconfig iptables off
-    /sbin/chkconfig ip6tables off
 	chmod +x /etc/init.d/cloudconfig   
 	/sbin/chkconfig cloudconfig on
     chown -R root:root /root/.ssh  
     chmod -R go-rwx /root/.ssh
     /sbin/chkconfig sshd on
+    /sbin/chkconfig ntpd on
+    /sbin/chkconfig iptables off
+    /sbin/chkconfig ip6tables off
     /usr/bin/yum-config-manager --disable sl
     /usr/bin/yum-config-manager --disable sl-security
     </command>
