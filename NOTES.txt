@@ -1,12 +1,23 @@
 
+Cloud config principles:
+
+-- Use off-the shelf wherever possible. SL, cloudinit, puppet, rpm/yum 
+-- Provide the ability to use external metadata, but do not require it. Provide a way to have default values already copied locally. 
+--  
+
 
 General config strategy:
 
+1) Use imagefactory to build images. 
+
 1) cloud-init?
   mount ephemeral disk?
-  
-2) query metadata for 
+  NoCloud requires the creation of an additional disk with /user-data and /meta-data directories. 
+  Need to make a DataSourceLocal.py interface to pull info from local filesystem. 
+    
+2) Query metadata for values to *override* locally-provided defaults. cloud-init sets up masterless puppet via cron on boot and every hour. 
 
+3) Use masterless puppet to do most config from merged config data (defaults + userdata). Node type and parameters come from that config data. 
 
 Cloud-init install on base:
 
@@ -20,10 +31,6 @@ Installing for dependencies:
  python-markdown                  noarch                2.0.1-3.1.el6                           sl63-x86_64-os                117 k
  python-pygments                  noarch                1.1.1-1.el6                             sl63-x86_64-os                561 k
  python-setuptools                noarch                0.6.10-3.el6                            sl63-x86_64-os                335 k
-
-
-
-
 
 
 Puppet 3 install RPMs
