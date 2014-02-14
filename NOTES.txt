@@ -1,9 +1,13 @@
 
 Cloud config principles:
 
--- Use off-the shelf wherever possible. SL, cloudinit, puppet, rpm/yum 
+-- Use off-the shelf wherever possible. SL, cloudinit, puppet, rpm/yum
+  -- This maximizes sysadmin familiarity with the resulting systems, both as hosts and as cloud VMs. 
+
+ 
 -- Provide the ability to use external metadata, but do not require it. Provide a way to have default values already copied locally. 
---  
+  -- This allows rapid testing and iteration, both on cloud platforms and by running VMs locally on a workstation (which doesn't have metadata)
+  -- This allows a few secret items (e.g. condor or db passwords ) to be baked into a private image, allowing the rest of the configuration to be done over public HTTP or via publically-shared configs. 
 
 
 General config strategy:
