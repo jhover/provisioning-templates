@@ -1,5 +1,5 @@
 <template>
-  <name>sl6-x86_64-base</name>
+  <name>sl6-x86_64-bare</name>
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-6</name>
@@ -9,7 +9,7 @@
       <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-iso/SL-63-x86_64-2012-08-02-Install-DVD.iso</iso>
     </install>
   </os>
-  <description>Base SL 6 for general-purpose VM usage with utilities.</description>
+  <description>Base SL 6 with minimal inclusions</description>
 
 <packages>
     
@@ -44,19 +44,11 @@
       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-updates-2013-04-05/x86_64</url>
       <signed>no</signed>
     </repository>
-	
+
   </repositories>
   
   <commands>
     <command name='basesetup'>
-	chmod +x /etc/init.d/cloudconfig   
-	/sbin/chkconfig cloudconfig on
-    chown -R root:root /root/.ssh  
-    chmod -R go-rwx /root/.ssh
-    /sbin/chkconfig sshd on
-    /sbin/chkconfig ntpd on
-    /sbin/chkconfig iptables off
-    /sbin/chkconfig ip6tables off
     /usr/bin/yum-config-manager --disable sl
     /usr/bin/yum-config-manager --disable sl-security
     </command>

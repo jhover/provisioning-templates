@@ -1,6 +1,5 @@
 #!/bin/bash
 #
-#
 # cloudconfig       Perform various cloud-related configuration at init time.
 #
 # chkconfig: 2345 12 88
@@ -9,6 +8,9 @@
 ### BEGIN INIT INFO
 # Provides: $network
 ### END INIT INFO
+
+# Defaults
+LOGFILE=/var/log/cloudconfig.log
 
 # Source function library.
 . /etc/init.d/functions
@@ -20,10 +22,10 @@ RETVAL=0
 
 prog="cloudconfig"
 
-start() {
-    echo -n $"Starting cloudconfig: "
- 
-	for VD in $VIRTUAL_DISKS ; do
+ephemeral_home() {
+# If an ephemeral disk is provided, make it /home and 
+# preserve existing content. 
+     for VD in $VIRTUAL_DISKS ; do
 		echo "Checking /dev/$VD ..." >> $LOGFILE
 		fdisk -l /dev/$VD 2>/dev/null | grep Disk >> $LOGFILE
 		if [ $? -eq 0 ]; then
@@ -49,8 +51,32 @@ start() {
 		echo "For disk /dev/$VD, nope..." >> $LOGFILE
 	done
 	d=`date`
-	echo "Done: $d"
 	echo "Done: $d" >> $LOGFILE 
+
+}
+
+runfixes() {
+	# Run all cloudconfig emergency fixes every time.
+	# With luck, these will not be necessary since they 
+	# can be implemented with Puppet. 
+	for i in /etc/cloudconfig/fixes.d/*.sh; do
+    	if [ -r "$i" ]; then
+        	. "$i" 
+    	fi
+	done
+}
+
+runpuppet() {
+
+
+}
+
+
+start() {
+    echo -n $"Starting cloudconfig: "
+ 	ephemeral_home
+ 	runfixes
+	echo "Done: $d"	
 }
 
 case "$1" in

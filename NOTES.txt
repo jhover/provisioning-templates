@@ -17,8 +17,12 @@ General config strategy:
 1) cloud-init?
   mount ephemeral disk?
   NoCloud requires the creation of an additional disk with /user-data and /meta-data directories. 
-  Need to make a DataSourceLocal.py interface to pull info from local filesystem. 
-    
+  Need to make a custom DataSourceLocal.py interface to pull info from local filesystem. 
+  This may be a good long-term alternative, but very difficult short/medium. 
+
+1) 
+  Go directly for puppet with very thin cloudconfig tool run from init. ??
+  
 2) Query metadata for values to *override* locally-provided defaults. cloud-init sets up masterless puppet via cron on boot and every hour. 
 
 3) Use masterless puppet to do most config from merged config data (defaults + userdata). Node type and parameters come from that config data. 

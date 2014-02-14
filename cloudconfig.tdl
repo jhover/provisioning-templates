@@ -1,0 +1,40 @@
+<template>
+  <name>cloudconfig</name>
+  <os>
+    <rootpw>griddev</rootpw>
+    <name>RHEL-6</name>
+    <version>3</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-iso/SL-63-x86_64-2012-08-02-Install-DVD.iso</iso>
+    </install>
+  </os>
+  <description>Adds cloudconfig package with default userdata and puppet</description>
+
+<packages>  
+    <package name='cloudconfig'/>
+    <package name='puppet'/>
+</packages>
+
+  <repositories>
+ 
+    <repository name='racf-grid-testing'>
+    	<url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64/</url>
+      	<signed>no</signed>
+	</repository>
+	
+    <repository name='epel'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-2014-02-14/</url>
+      <signed>no</signed>
+    </repository>
+
+  </repositories>
+  
+  <commands>
+    <command name='basesetup'>
+	    /sbin/chkconfig cloudconfig on
+    </command>
+   
+  </commands> 
+
+</template>
