@@ -67,6 +67,7 @@ runfixes() {
 }
 
 runpuppet() {
+    echo ""
 
 
 }
