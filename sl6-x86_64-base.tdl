@@ -59,6 +59,7 @@
     /sbin/chkconfig ip6tables off
     /usr/bin/yum-config-manager --disable sl
     /usr/bin/yum-config-manager --disable sl-security
+    echo "NOZEROCONF=yes" >> /etc/sysconfig/network
     </command>
    
   </commands> 
