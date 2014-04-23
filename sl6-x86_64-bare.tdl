@@ -9,7 +9,7 @@
       <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-iso/SL-63-x86_64-2012-08-02-Install-DVD.iso</iso>
     </install>
   </os>
-  <description>Base SL 6 with minimal inclusions</description>
+  <description>Bare SL 6 with minimal inclusions. No config.</description>
 
 <packages>
     
@@ -42,6 +42,11 @@
     
     <repository name='sl63-x86_64-updates'>    
       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/sl63-x86_64-updates-2013-04-05/x86_64</url>
+      <signed>no</signed>
+    </repository>
+   
+    <repository name='epel'>
+       <url>http://mirror.bnl.gov/fedora-epel/6/x86_64</url>
       <signed>no</signed>
     </repository>
 

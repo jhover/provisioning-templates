@@ -1,0 +1,40 @@
+<template>
+  <name>baseconfig</name>
+  <description>Low-level OS config. Puppet. Userdata if available.</description>
+
+  <packages>
+   
+    <package name='puppet'/>
+
+  </packages>
+
+  <repositories>
+  <!--
+    <repository name='epel'>
+       <url>http://mirror.bnl.gov/fedora-epel/6/x86_64</url>
+      <signed>no</signed>
+    </repository>
+   -->
+
+    <repository name='puppetlabs-products'>
+       <url>http://yum.puppetlabs.com/el/6/products/$basearch</url>
+      <signed>no</signed>
+    </repository>
+    
+    <repository name='puppetlabs-deps'>
+       <url>http://yum.puppetlabs.com/el/6/dependencies/$basearch</url>
+      <signed>no</signed>
+    </repository>
+    
+  </repositories>
+  
+  <commands>
+    <command name='configsetup'>
+    chkconfig crond on
+    service crond start
+
+    </command>
+   
+  </commands> 
+
+</template>
