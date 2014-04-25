@@ -2,19 +2,17 @@
   <name>baseconfig</name>
   <description>Low-level OS config. Puppet. Userdata if available.</description>
 
-  <packages>
-   
+  <packages> 
     <package name='puppet'/>
-
+	<package name='provisioning-config'/>
   </packages>
 
   <repositories>
-  <!--
-    <repository name='epel'>
-       <url>http://mirror.bnl.gov/fedora-epel/6/x86_64</url>
+
+    <repository name='racf-development'>
+       <url>http://dev.racf.bnl.gov/yum/grid/development/rhel/6Workstation/$basearch/</url>
       <signed>no</signed>
     </repository>
-   -->
 
     <repository name='puppetlabs-products'>
        <url>http://yum.puppetlabs.com/el/6/products/$basearch</url>
