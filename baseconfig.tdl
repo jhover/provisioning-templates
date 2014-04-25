@@ -32,7 +32,7 @@
     <command name='configsetup'>
     chkconfig crond on
     service crond start
-
+    chkconfig puppet off
     </command>
    
   </commands> 
