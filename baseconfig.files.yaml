@@ -1,5 +1,4 @@
 files:
-  "/etc/cron.d/puppet": "puppet/puppet.cron"
-  "/usr/sbin/puppet.sh" : "puppet/puppet.sh"
+
   
   
