@@ -3,7 +3,7 @@
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-5</name>
-    <version>9</version>
+    <version>U9</version>
     <arch>x86_64</arch>
     <install type='iso'>
       <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-iso/SL.59.020213.DVD.x86_64.disc1.iso</iso>
