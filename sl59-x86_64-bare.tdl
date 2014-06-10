@@ -1,12 +1,12 @@
 <template>
-  <name>sl510-x86_64-bare</name>
+  <name>sl59-x86_64-bare</name>
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-5</name>
-    <version>10</version>
+    <version>9</version>
     <arch>x86_64</arch>
     <install type='iso'>
-      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl510-x86_64-iso/SL.59.110513.DVD.x86_64.disc1.iso</iso>
+      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-iso/SL.59.020213.DVD.x86_64.disc1.iso</iso>
     </install>
   </os>
   <description>Bare SL 5 with minimal inclusions. No config.</description>
@@ -35,13 +35,13 @@
 
   <repositories>
  
-    <repository name='sl510-x86_64-os'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl510-x86_64-os-2014-06-10/x86_64</url>
+    <repository name='sl59-x86_64-os'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-os-2014-06-10</url>
       <signed>no</signed>
     </repository>
     
-    <repository name='sl63-x86_64-updates'>    
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl510-x86_64-updates-2014-06-10/x86_64</url>
+    <repository name='sl59-x86_64-updates'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-updates-2014-06-10</url>
       <signed>no</signed>
     </repository>
   
