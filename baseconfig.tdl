@@ -15,12 +15,12 @@
     </repository>
 
     <repository name='puppetlabs-products'>
-       <url>http://yum.puppetlabs.com/el/6/products/$basearch</url>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-products-2014-06-05</url>
       <signed>no</signed>
     </repository>
     
     <repository name='puppetlabs-deps'>
-       <url>http://yum.puppetlabs.com/el/6/dependencies/$basearch</url>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-deps-2014-06-05/</url>
       <signed>no</signed>
     </repository>
     
