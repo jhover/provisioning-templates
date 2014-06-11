@@ -1,12 +1,12 @@
 <template>
-  <name>sl59-x86_64-bare</name>
+  <name>centos510-x86_64-bare</name>
   <os>
     <rootpw>griddev</rootpw>
-    <name>RHEL-5</name>
-    <version>U9</version>
+    <name>CentOS-5</name>
+    <version>U10</version>
     <arch>x86_64</arch>
     <install type='iso'>
-      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-iso/SL.59.020213.DVD.x86_64.disc1.iso</iso>
+      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel5/x86_64-iso/CentOS-5.10-x86_64-bin-DVD-1of2.iso</iso>
     </install>
   </os>
   <description>Bare SL 5 with minimal inclusions. No config.</description>
@@ -14,8 +14,6 @@
 <packages>
     
     <package name='bash'/>
-    
-    <!--
     <package name='bind-utils'/>
     <package name='bind-utils'/>
     <package name='curl'/>
@@ -33,18 +31,17 @@
     <package name='wget'/>
     <package name='yum'/>
     <package name='zip'/>
-	-->
 </packages>
 
   <repositories>
  
-    <repository name='sl59-x86_64-os'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-os-2014-06-10</url>
+    <repository name='centos510-x86_64-base'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/centos510-x86_64-base</url>
       <signed>no</signed>
     </repository>
     
-    <repository name='sl59-x86_64-updates'>    
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/sl59-x86_64-updates-2014-06-10</url>
+    <repository name='centos510-x86_64-updates'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/centos510-x86_64-updates</url>
       <signed>no</signed>
     </repository>
   
