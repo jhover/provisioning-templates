@@ -40,8 +40,8 @@
       <signed>no</signed>
     </repository>
     
-    <repository name='centos510-x86_64-updates'>    
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/centos510-x86_64-updates</url>
+    <repository name='centos510-x86_64-update'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel5/centos510-x86_64-update</url>
       <signed>no</signed>
     </repository>
   
