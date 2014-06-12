@@ -46,13 +46,6 @@
     </repository>
   
   </repositories>
-  
-  <commands>
-    <command name='basesetup'>
-    /usr/bin/yum-config-manager --disable sl
-    /usr/bin/yum-config-manager --disable sl-security
-    </command>
-   
-  </commands> 
+ 
 
 </template>
