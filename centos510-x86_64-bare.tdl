@@ -9,7 +9,7 @@
       <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel5/x86_64-iso/CentOS-5.10-x86_64-bin-DVD-1of2.iso</iso>
     </install>
   </os>
-  <description>Bare SL 5 with minimal inclusions. No config.</description>
+  <description>Bare CentOS 5 with minimal inclusions. No config.</description>
 
 <packages>
     
