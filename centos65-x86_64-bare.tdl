@@ -46,6 +46,14 @@
     </repository>
   
   </repositories>
+   <commands>
+    <command name='basesetup'>
+    /usr/bin/yum-config-manager --disable base
+    /usr/bin/yum-config-manager --disable updates
+    /usr/bin/yum-config-manager --disable extras
+    </command>
+   
+  </commands> 
  
 
 </template>
