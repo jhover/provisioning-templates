@@ -3,7 +3,6 @@
   <description>Adds cloudconfig package with default userdata and puppet</description>
 
 <packages>  
-    <package name='cloudconfig'/>
     <package name='puppet'/>
     <package name='cloud-init'/>
 </packages>
@@ -14,9 +13,19 @@
     	<url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64/</url>
       	<signed>no</signed>
 	</repository>
+
+    <repository name='puppetlabs-products'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-products-2014-06-05/</url>
+      <signed>no</signed>
+    </repository>
+
+    <repository name='puppetlabs-deps'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-deps-2014-06-05/</url>
+      <signed>no</signed>
+    </repository>
 	
     <repository name='epel'>
-       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel-2014-06-05/</url>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel/</url>
       <signed>no</signed>
     </repository>
 
@@ -24,7 +33,7 @@
   
   <commands>
     <command name='basesetup'>
-	    /sbin/chkconfig cloudconfig on
+	    /sbin/chkconfig cloud-init on
     </command>
    
   </commands> 
