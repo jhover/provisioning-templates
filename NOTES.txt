@@ -1,7 +1,7 @@
 
 Cloud config principles:
 
--- Use off-the shelf wherever possible. SL, cloudinit, puppet, rpm/yum
+-- Use off-the shelf wherever possible. SL, cloud-init, puppet, rpm/yum
   -- This maximizes sysadmin familiarity with the resulting systems, both as hosts and as cloud VMs. 
 
  

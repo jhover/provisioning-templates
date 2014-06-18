@@ -5,6 +5,7 @@
 <packages>  
     <package name='puppet'/>
     <package name='cloud-init'/>
+    <package name='provisioning-config'/>
 </packages>
 
   <repositories>
