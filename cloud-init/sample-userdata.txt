@@ -1,0 +1,7 @@
+write_files:
+-   content: |
+        # My custom local hiera file.
+       
+    path: /etc/hiera/local.yaml
+    owner: root:root
+    permissions: '0644'
