@@ -1,0 +1,27 @@
+<template>
+  <name>osg-worker</name>
+  <description>OSG Worker Node with CVMFS/OASIS distributed filesystem.</description>
+
+<packages>  
+    <package name='osg-wn-client'/>
+    <package name='osg-oasis'/>
+    <package name='osg-config'/>
+</packages>
+
+  <repositories>
+ 
+    <repository name='osg-release-x86_64'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/osg-el6-3.2.11-2014-06-19</url>
+      <signed>no</signed>
+    </repository>
+
+  </repositories>
+  
+  <commands>
+    <command name='basesetup'>
+	    /sbin/chkconfig cloud-init on
+    </command>
+   
+  </commands> 
+
+</template>

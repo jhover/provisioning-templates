@@ -51,6 +51,7 @@
     /usr/bin/yum-config-manager --disable base
     /usr/bin/yum-config-manager --disable updates
     /usr/bin/yum-config-manager --disable extras
+    /usr/sbin/setenforce 0
     </command>
    
   </commands> 
