@@ -6,7 +6,10 @@
     <version>5</version>
     <arch>x86_64</arch>
     <install type='iso'>
+      <iso>file:///afs/usatlas.bnl.gov/mgmt/repo/snapshots/rhel6/x86_64-iso/CentOS-6.5-x86_64-bin-DVD1.iso</iso>
+      <--
       <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/x86_64-iso/CentOS-6.5-x86_64-bin-DVD1.iso</iso>
+      --/>
     </install>
   </os>
   <description>Bare CentOS 6 with minimal inclusions. No config.</description>
