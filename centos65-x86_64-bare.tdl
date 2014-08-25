@@ -18,7 +18,6 @@
     
     <package name='bash'/>
     <package name='bind-utils'/>
-    <package name='bind-utils'/>
     <package name='curl'/>
     <package name='dhclient'/>
     <package name='lsof'/>
