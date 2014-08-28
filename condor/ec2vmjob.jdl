@@ -1,0 +1,29 @@
+# Location of files
+Dir = /root/condor/logs
+output = $(Dir)/$(Cluster).$(Process).out
+error = $(Dir)/$(Cluster).$(Process).err
+log = $(Dir)/$(Cluster).$(Process).log
+
+# Job properties
+universe = grid
+grid_resource = ec2 http://cldext01.usatlas.bnl.gov:8773/services/Cloud
+environment = "CID=$(Cluster).$(Process)"
+ec2_ami_id = ami-fc2df794
+ec2_instance_type = m1.small
+ec2_user_data_file = 
+executable = cloudvmjob
+arguments = 
+
+# Security
+ec2_access_key_id = /root/etc/ec2/access.key
+ec2_secret_access_key = /root/etc/ec2/secret.key
+
+# Job behavior
+notification = Error
+notify_user = jhover@bnl.gov
+periodic_remove  =  (JobStatus == 5 && (CurrentTime - EnteredCurrentStatus) > 600) || (JobStatus == 1 && (CurrentTime - EnteredCurrentStatus) > 1800)
+stream_error = False
+stream_output = False
+transfer_executable = True
+
+queue 1
