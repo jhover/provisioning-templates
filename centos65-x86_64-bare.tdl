@@ -20,6 +20,7 @@
     <package name='bind-utils'/>
     <package name='curl'/>
     <package name='dhclient'/>
+    <package name='git'/>
     <package name='lsof'/>
     <package name='ntp'/>
     <package name='openssh-clients'/>
