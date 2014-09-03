@@ -23,6 +23,14 @@
       /usr/sbin/useradd slot6
       /usr/sbin/useradd slot7
       /usr/sbin/useradd slot8
+      /usr/sbin/useradd slot9
+      /usr/sbin/useradd slot10      
+      /usr/sbin/useradd slot11
+      /usr/sbin/useradd slot12
+      /usr/sbin/useradd slot13
+      /usr/sbin/useradd slot14
+      /usr/sbin/useradd slot15
+      /usr/sbin/useradd slot16
     </command>
 
     <command name='condorsetup'>

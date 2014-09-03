@@ -47,7 +47,7 @@ config_attrs() {
 calc_slots() {
   #
   # Since cloud nodes have virtual CPUs anyway, calculate NUM_CPUS based on 
-  # desired memory. 2G by default, but provide for future miniumus via 
+  # desired memory. 2G by default, but provide for future minimums via 
   # Userdata....
   #
         if [ "$1X" = "X" ]; then

@@ -14,8 +14,6 @@
     <package name='compat-openldap'/>  
     <package name='compat-readline5'/>
     <package name='compat-readline5.i686'/>
-    <package name='cvmfs'/>
-    <package name='fuse'/>
     <package name='lfc-python'/>
     <package name='ncurses'/>
     <package name='ncurses-libs.i686'/>  
@@ -55,12 +53,7 @@
     <package name='sqlite.i686'/>    
   </packages>
 
-  <repositories>
-    <repository name='cvmrepo'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/cvmrepo-2-14-01-30</url>
-      <signed>no</signed>
-    </repository>
-    
+  <repositories>   
     <repository name='cern-extras'>
       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/cern-extras-2014-01-30</url>
       <signed>no</signed>
@@ -69,7 +62,6 @@
 
   <commands>
     <command name='atlassetup'>
-      chmod +x /etc/sysconfig/modules/fuse.modules
       chmod ugo+rx /home/osg/app/atlas_app/copysetup.sh
       chmod ugo+rx /home/osg/app/atlas_app/local/setup.sh
       mkdir -p /home/cvmfs
