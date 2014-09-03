@@ -33,7 +33,7 @@
   </repositories>
   
   <commands>
-    <command name='basesetup'>
+    <command name='cloudsetup'>
 	    /sbin/chkconfig cloud-init on
     </command>
    
