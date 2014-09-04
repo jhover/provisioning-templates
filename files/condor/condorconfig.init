@@ -61,8 +61,9 @@ calc_slots() {
         if [ $numslots -lt 1 ]; then
            numslots=1
         fi
+		if [ $numslots -gt $numcpus ] ; then
+		    numslots=$numcpus
         echo $numslots
-
 }
 
 config_slots() {
@@ -73,9 +74,10 @@ config_slots() {
 	slot_config=/etc/condor/config.d/91slots.config
 	RETVAL=0
 	if [ ! -r $slot_config ] ; then
-		numcpus=$(calc_slots)
+		numcpus=`cat /proc/cpuinfo | grep "^processor" | wc -l`
+		numslots=$(calc_slots)
 	    echo "NUM_CPUS=$numcpus">>$slot_config
-	    echo "NUM_SLOTS=$numcpus">>$slot_config
+	    echo "NUM_SLOTS=$numslots">>$slot_config
  	    echo >> $slot_config
 	fi
 	return $RETVAL
