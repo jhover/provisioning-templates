@@ -36,6 +36,7 @@
     <command name='cloudsetup'>
 	    /sbin/chkconfig cloud-init on
 	    /sbin/chkconfig --add mounthome
+	    chmod ugo+x /etc/init.d/mounthome
     </command>
    
   </commands> 
