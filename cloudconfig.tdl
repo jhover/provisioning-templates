@@ -35,6 +35,7 @@
   <commands>
     <command name='cloudsetup'>
 	    /sbin/chkconfig cloud-init on
+	    /sbin/chkconfig --add mounthome
     </command>
    
   </commands> 
