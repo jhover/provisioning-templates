@@ -44,9 +44,6 @@
     <package name='libxml2-devel.i686'/>    
     <package name='libXpm.i686'/>   
     <package name='libXpm'/>    
-    <package name='openssl098e.i686'/>      
-    <package name='openssl098e'/>    
-    <package name='openssl.i686'/>
     <package name='procmail'/>
     <package name='sharutils'/>
     <package name='sqlite'/>
