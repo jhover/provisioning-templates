@@ -61,8 +61,9 @@ calc_slots() {
         if [ $numslots -lt 1 ]; then
            numslots=1
         fi
-		if [ $numslots -gt $numcpus ] ; then
-		    numslots=$numcpus
+        if [ $numslots -gt $numcpus ] ; then
+            numslots=$numcpus
+        fi
         echo $numslots
 }
 
