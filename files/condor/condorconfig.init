@@ -95,7 +95,7 @@ config_password() {
 start() {
 	echo -n $"Setting random collector, slots, and auth: "
 	# Temporarily disabled until condor 8.1.x resolved.  
-	# config_collector
+	config_collector
 	config_slots
 	config_attrs
 	config_password
