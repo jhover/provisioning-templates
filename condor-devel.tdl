@@ -38,6 +38,7 @@
       chown -R condor:condor /home/condor
       chmod ugo+rwx /home/condor/execute
       chmod +t /home/condor/execute
+      chown root:root /usr/libexec/jobwrapper.sh
       chmod +x /usr/libexec/jobwrapper.sh
       chown root:root /etc/condor/password
       chmod o-rwx /etc/condor/password
