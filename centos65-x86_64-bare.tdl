@@ -1,5 +1,5 @@
 <template>
-  <name>centos65-x8664-bare</name>
+  <name>centos65-bare</name>
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-6</name>

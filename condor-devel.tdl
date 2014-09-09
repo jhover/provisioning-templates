@@ -1,5 +1,5 @@
 <template>
-  <name>condor-devel</name>
+  <name>condor-dev</name>
   <description>Adds Condor batch system to general VM</description>
 
   <packages>  

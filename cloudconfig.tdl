@@ -1,5 +1,5 @@
 <template>
-  <name>cloudconfig</name>
+  <name>cloud</name>
   <description>Adds cloudconfig package with default userdata and puppet</description>
 
 <packages>  
