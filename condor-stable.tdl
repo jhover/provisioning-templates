@@ -8,7 +8,7 @@
 
   <repositories>
     <repository name='htcondor-stable'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/htcondor-stable-2014-01-30</url>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/htcondor-stable-2014-09-11</url>
       <signed>no</signed>
     </repository>
   </repositories>
