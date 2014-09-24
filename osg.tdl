@@ -24,7 +24,7 @@
     -->
     
     <repository name='epel'>
-     <url>http://mirror.bnl.gov/fedora-epel/6/x86_64</url>
+     <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/epel-x86_64</url>
       <signed>no</signed>
     </repository>
 
