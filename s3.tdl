@@ -1,9 +1,10 @@
 <template>
-  <name>storage</name>
+  <name>s3</name>
   <description>Adds Grid Storage Tools and config</description>
 
   <packages>  
     <package name='s3fs'/>
+    <package name='s3cmd' />
   </packages>
 
   <repositories>
@@ -12,5 +13,11 @@
       <url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64</url>
       <signed>no</signed>
     </repository>
+    
+    <repository name='epel'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/epel-x86_64</url>
+       <signed>no</signed>
+    </repository>
+     
   </repositories>
 </template>
