@@ -1,0 +1,16 @@
+<template>
+  <name>storage</name>
+  <description>Adds Grid Storage Tools and config</description>
+
+  <packages>  
+    <package name='s3fs'/>
+  </packages>
+
+  <repositories>
+
+    <repository name='racf-grid-testing'>
+      <url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64</url>
+      <signed>no</signed>
+    </repository>
+  </repositories>
+</template>
