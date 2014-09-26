@@ -26,7 +26,7 @@
     </repository>
 	
     <repository name='epel'>
-       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel/</url>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel-x86_64/</url>
       <signed>no</signed>
     </repository>
 
