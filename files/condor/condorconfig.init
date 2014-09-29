@@ -77,7 +77,7 @@ config_slots() {
     numcpus=`cat /proc/cpuinfo | grep "^processor" | wc -l`
 	numslots=$(calc_slots)
 	echo "NUM_CPUS=$numcpus">$slot_config
-	echo "NUM_SLOTS=$numslots">>$slot_config
+	#echo "NUM_SLOTS=$numslots">>$slot_config
  	echo >> $slot_config
 	return $RETVAL
 }
