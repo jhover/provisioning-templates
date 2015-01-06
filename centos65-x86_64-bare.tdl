@@ -15,6 +15,7 @@
     
     <package name='bash'/>
     <package name='bind-utils'/>
+    <package name='cloud-init'/>
     <package name='curl'/>
     <package name='dhclient'/>
     <package name='git'/>
