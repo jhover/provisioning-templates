@@ -3,10 +3,10 @@
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-6</name>
-    <version>5</version>
+    <version>6</version>
     <arch>x86_64</arch>
     <install type='iso'>
-      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/x86_64-iso/CentOS-6.5-x86_64-bin-DVD1.iso</iso>
+      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel6/x86_64-iso/CentOS-6.6-x86_64-bin-DVD1.iso</iso>
     </install>
   </os>
   <description>Bare CentOS 6 with minimal inclusions. No config.</description>
@@ -37,13 +37,13 @@
 
   <repositories>
  
-    <repository name='centos65-x86_64-base'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos65-x86_64-base</url>
+    <repository name='centos6-x86_64-base'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos6-x86_64-base</url>
       <signed>no</signed>
     </repository>
     
-    <repository name='centos65-x86_64-update'>    
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos65-x86_64-update</url>
+    <repository name='centos6-x86_64-update'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos6-x86_64-update</url>
       <signed>no</signed>
     </repository>
   
