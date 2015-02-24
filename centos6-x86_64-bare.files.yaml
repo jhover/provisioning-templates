@@ -1,5 +1,6 @@
 files:
   "/etc/selinux/config" : "sysconfig/selinux"
+  "/etc/sysconfig/network-scrits/ifcfg-eth0" : "sysconfig/ifcfg-eth0"
 
 
   
