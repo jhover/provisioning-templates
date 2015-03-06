@@ -1,7 +1,7 @@
 #
 # Setup ATLAS-specific things...
 #
-export RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/0.1.12
+export RUCIO_HOME=/cvmfs/atlas.cern.ch/repo/sw/ddm/rucio-clients/latest
 export RUCIO_AUTH_TYPE=x509_proxy
 
 if [ -z $DQ2_HOME ]; then
