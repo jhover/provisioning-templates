@@ -7,6 +7,19 @@
     <package name='osg-wn-client'/>
     <package name='yum-priorities'/>
 
+    <package name='voms'/>
+    <package name='globus-ftp-client'/>
+    <package name='globus-gass-transfer'/>
+    <package name='globus-io'/>
+    <package name='globus-gssapi-gsi'/>
+    <package name='globus-gss-assist'/>
+    <package name='globus-gsi-credential'/>
+    <package name='globus-gsi-cert-utils'/>
+
+
+
+
+
   </packages>
 
   <repositories>
