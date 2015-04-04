@@ -27,7 +27,7 @@
   <repositories>
 
     <repository name='osg-el6-x86_64'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/osg-el6-3.2.21-2015-03-11</url>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/osg-el6-3.2.21-2015-03-11/x86_64</url>
       <signed>no</signed>
     </repository>
 
