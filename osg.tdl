@@ -6,7 +6,8 @@
     <package name='osg-ca-certs'/>
     <package name='osg-wn-client'/>
     <package name='yum-priorities'/>
-
+    <package name='cvmfs'/>
+    <package name='oasis-config'/>
     <package name='voms'/>
     <package name='globus-ftp-client'/>
     <package name='globus-gass-transfer'/>
@@ -24,8 +25,8 @@
 
   <repositories>
 
-    <repository name='osg-release-x86_64'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/osg-release-3.2.3-2014-01-30</url>
+    <repository name='osg-el6-x86_64'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/osg-el6-3.2.21-2015-03-11</url>
       <signed>no</signed>
     </repository>
 
