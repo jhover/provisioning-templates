@@ -1,6 +1,6 @@
 <template>
-  <name>condor-stable</name>
-  <description>Adds Condor batch system to general VM</description>
+  <name>condor-stable-execute</name>
+  <description>Adds Condor batch system execute.</description>
 
   <packages>  
     <package name='condor'/>

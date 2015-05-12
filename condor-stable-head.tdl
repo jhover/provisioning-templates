@@ -1,5 +1,5 @@
 <template>
-  <name>condor-stable-cm</name>
+  <name>condor-stable-head</name>
   <description>Adds standard Condor central manager</description>
 
   <packages>  
