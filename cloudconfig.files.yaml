@@ -2,6 +2,6 @@ files:
   "/etc/ntp/step-tickers" : "ntp/step-tickers"
   "/etc/security/limits.d/80-limits.conf" : "limits/80-limits.conf"
   "/etc/selinux/config" : "sysconfig/selinux"
-
+  "/etc/cloud/cloud.cfg.d/10_hostname.cfg" : "cloudconfig/10_hostname.cfg"
 
   
