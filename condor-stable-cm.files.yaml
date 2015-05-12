@@ -1,9 +1,0 @@
-files:
-  "/etc/condor/condor_config.local" : "condor/condor_config.local"
-  "/etc/condor/config.d/50standardcollector.config" : "condor/50standardcollector.config"
-  "/etc/condor/config.d/60wnbase.config" :  "condor/60wnbase.config"
-  "/etc/init.d/condorconfig" :  "condor/condorconfig.init"
-  "/etc/sysconfig/condorconfig" : "condor/condorconfig.sysconfig"
-  "/usr/libexec/jobwrapper.sh" : "condor/jobwrapper.sh"
-  "/etc/condor/password" : "condor/password"
-  "/etc/condor/password_file" : "condor/password_file"     

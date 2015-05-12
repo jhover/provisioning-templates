@@ -29,6 +29,12 @@
        <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel-x86_64/</url>
       <signed>no</signed>
     </repository>
+    
+    <repository name='rdo-icehouse'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/rdo-icehouse/</url>
+      <signed>no</signed>
+    </repository>
+    
 
   </repositories>
   

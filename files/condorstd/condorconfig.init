@@ -11,8 +11,8 @@
 # Source function library.
 . /etc/rc.d/init.d/functions
 
-if [ -f /etc/sysconfig/condorconfigstd ]; then
-	. /etc/sysconfig/condorconfigstd
+if [ -f /etc/sysconfig/condorconfig ]; then
+	. /etc/sysconfig/condorconfig
 fi
 
 config_attrs() {
@@ -35,6 +35,7 @@ config_attrs() {
 }
 
 config_password() {
+    # Create encrypted condor_password file from plain text /etc/condor/password contents. 
 	CPASSWD=`cat /etc/condor/password`
 	/usr/sbin/condor_store_cred -p $CPASSWD -f /etc/condor/password_file
 	chmod ugo-x /etc/condor/password_file
@@ -42,11 +43,22 @@ config_password() {
 	chmod o-r /etc/condor/password_file
 }
 
+config_slots() {
+	# Ensure slot account is present for each CPU
+	numcpus=`cat /proc/cpuinfo | grep "^processor" | wc -l`
+	while [ $numcpus -gt 0 ]; do
+		/usr/bin/useradd "slot$numcpus"
+		numcpus=$(($numcpus-1))
+	done
+}
+
+
 start() {
-	echo -n $"Setting random collector, slots, and auth: "
-	# Temporarily disabled until condor 8.1.x resolved.  
+	echo -n $"Setting up Condor attributes, slots, password: "
 	config_attrs
 	config_password
+	config_slots
+	
 	RETVAL=$?
 	echo
 	return $RETVAL

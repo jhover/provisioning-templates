@@ -1,14 +1,17 @@
 files:
   "/etc/condor/config.d" : "condorstd/30master.config"
+  "/etc/condor/config.d" : "condorstd/40cm.config"
+  "/etc/condor/config.d" : "condorstd/45cm_depthfirst.config"
   "/etc/condor/config.d" : "condorstd/50startd.config"
   "/etc/condor/config.d" : "condorstd/51startd_job.config"
   "/etc/condor/config.d" : "condorstd/53startd_partslots.config"
+  "/etc/condor/config.d" : "condorstd/60schedd.config"
   "/etc/condor/config.d" : "condorstd/70sec_password.config"
   "/etc/condor/config.d" : "condorstd/72network.config"
   "/etc/condor/config.d" : "condorstd/80collector.config"
   "/etc/condor/config.d" : "condorstd/90logdebug.config"
+  
   "/etc/init.d/condorconfig" :  "condorstd/condorconfig.init"
   "/etc/sysconfig/condorconfig" : "condorstd/condorconfig.sysconfig"
   "/usr/libexec/jobwrapper.sh" : "condorstd/jobwrapper.sh"
   "/etc/condor/password" : "condorstd/password"
-    

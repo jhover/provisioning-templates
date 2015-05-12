@@ -84,6 +84,15 @@ config_slots() {
 	return $RETVAL
 }
 
+config_slot_users() {
+	# Ensure slot account for each CPU
+	numcpus=`cat /proc/cpuinfo | grep "^processor" | wc -l`
+	while [ $numcpus -gt 0 ]; do
+		/usr/bin/useradd "slot$numcpus"
+		numcpus=$(($numcpus-1))
+	done
+}
+
 config_password() {
 	CPASSWD=`cat /etc/condor/password`
 	/usr/sbin/condor_store_cred -p $CPASSWD -f /etc/condor/password_file
