@@ -83,7 +83,6 @@
        <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel-x86_64/</url>
       <signed>no</signed>
     </repository>     
-  </repositories>
-      
-  </commands>
+  </repositories>    
+
 </template>
