@@ -53,6 +53,7 @@
        <package name='mercurial'/>
        <package name='nasm'/>
 	   <package name='numpy'/>
+	   <package name='octave'/>
        <package name='patch'/>
        <package name='patchutils'/>
        <package name='perl'/>
