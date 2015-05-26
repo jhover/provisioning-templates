@@ -49,8 +49,6 @@
       /usr/sbin/useradd slot32      
     </command>
 
-
-  <commands>
     <command name='condorsetup'>
       mkdir -p /home/condor/execute
       chown -R condor:condor /home/condor
