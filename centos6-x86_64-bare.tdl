@@ -18,12 +18,14 @@
     <package name='curl'/>
     <package name='dhclient'/>
     <package name='emacs'/>
+    <package name='expect'/>
     <package name='git'/>
     <package name='lsof'/>
     <package name='ntp'/>
     <package name='openssh-clients'/>
     <package name='openssh-server'/>
     <package name='passwd'/>
+    <package name='pexpect'/>
     <package name='redhat-lsb'/>
     <package name='rpm'/>
     <package name='rpm-libs'/>
