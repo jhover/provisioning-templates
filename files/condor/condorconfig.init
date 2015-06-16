@@ -36,12 +36,14 @@ config_attrs() {
         PUBDNS=`/usr/bin/curl -s http://169.254.169.254/latest/meta-data/public-hostname`
         IID=`/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id`
         ITYPE=`/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-type`
+        AMIID=`/usr/bin/curl -s http://169.254.169.254/latest/meta-data/ami-id`
         echo "EC2PublicIP = \"$PUBID\"" > $attrfile
         echo "EC2PublicDNS = \"$PUBDNS\"" >> $attrfile
         echo "EC2InstanceID = \"$IID\"" >> $attrfile
         echo "EC2InstanceType = \"$ITYPE\"" >> $attrfile
-        echo 'STARTD_EXPRS = $(STARTD_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS EC2InstanceType' >> $attrfile
-        echo 'MASTER_EXPRS = $(MASTER_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS EC2InstanceType' >> $attrfile
+        echo "EC2AMIID = \"$AMIID\"" >> $attrfile
+        echo 'STARTD_EXPRS = $(STARTD_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS EC2InstanceType EC2AMIID' >> $attrfile
+        echo 'MASTER_EXPRS = $(MASTER_EXPRS) EC2InstanceID EC2PublicIP EC2PublicDNS EC2InstanceType EC2AMIID' >> $attrfile
         chmod a+r $attrfile
 
 }
