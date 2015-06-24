@@ -72,7 +72,8 @@
        <package name='perl-XML-Grove'/>
        <package name='perl-XML-Twig'/>
        <package name='pkgconfig'/>
-       <package name='pyton-matplotlib'/>
+       <package name='pygtk2'/>
+       <package name='python-matplotlib'/>
        <package name='rcs'/>
        <package name='scipy'/>
        <package name='subversion'/>
