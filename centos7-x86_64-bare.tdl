@@ -1,0 +1,64 @@
+<template>
+  <name>centos7-bare</name>
+  <os>
+    <rootpw>griddev</rootpw>
+    <name>RHEL-7</name>
+    <version>1</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>http://dev.racf.bnl.gov/yum/snapshots/rhel7/x86_64-iso/CentOS-7-x86_64-DVD-1503-01.iso</iso>
+    </install>
+  </os>
+  <description>Bare CentOS 7 with minimal inclusions. No config.</description>
+
+<packages>
+    
+    <package name='bash'/>
+    <package name='bind-utils'/>
+    <package name='curl'/>
+    <package name='dhclient'/>
+    <package name='emacs'/>
+    <package name='expect'/>
+    <package name='git'/>
+    <package name='lsof'/>
+    <package name='ntp'/>
+    <package name='openssh-clients'/>
+    <package name='openssh-server'/>
+    <package name='passwd'/>
+    <package name='pexpect'/>
+    <package name='redhat-lsb'/>
+    <package name='rpm'/>
+    <package name='rpm-libs'/>
+    <package name='telnet'/>
+    <package name='unzip'/>
+    <package name='vim-enhanced'/>
+    <package name='wget'/>
+    <package name='yum'/>
+    <package name='zip'/>
+</packages>
+
+  <repositories>
+ 
+    <repository name='centos6-x86_64-base'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos6-x86_64-base</url>
+      <signed>no</signed>
+    </repository>
+    
+    <repository name='centos6-x86_64-update'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos6-x86_64-update</url>
+      <signed>no</signed>
+    </repository>
+  
+  </repositories>
+   <commands>
+    <command name='basesetup'>
+    /usr/bin/yum-config-manager --disable base
+    /usr/bin/yum-config-manager --disable updates
+    /usr/bin/yum-config-manager --disable extras
+    /usr/sbin/setenforce 0
+    </command>
+   
+  </commands> 
+ 
+
+</template>
