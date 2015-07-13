@@ -39,13 +39,13 @@
 
   <repositories>
  
-    <repository name='centos6-x86_64-base'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos6-x86_64-base</url>
+    <repository name='centos7-x86_64-base'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/centos7-x86_64-base</url>
       <signed>no</signed>
     </repository>
     
-    <repository name='centos6-x86_64-update'>    
-      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/centos6-x86_64-update</url>
+    <repository name='centos7-x86_64-update'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/centos7-x86_64-update</url>
       <signed>no</signed>
     </repository>
   

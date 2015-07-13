@@ -29,6 +29,7 @@
     <package name='redhat-lsb'/>
     <package name='rpm'/>
     <package name='rpm-libs'/>
+    <package name='openssh-clients'/>
     <package name='telnet'/>
     <package name='unzip'/>
     <package name='vim-enhanced'/>
