@@ -29,7 +29,6 @@
     <package name='redhat-lsb'/>
     <package name='rpm'/>
     <package name='rpm-libs'/>
-    <package name='openssh-clients'/>
     <package name='telnet'/>
     <package name='unzip'/>
     <package name='vim-enhanced'/>
@@ -57,6 +56,7 @@
     /usr/bin/yum-config-manager --disable updates
     /usr/bin/yum-config-manager --disable extras
     /usr/sbin/setenforce 0
+    /sbni/service sshd start
     </command>
    
   </commands> 
