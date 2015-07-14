@@ -33,7 +33,7 @@
     <package name='unzip'/>
     <package name='vim-enhanced'/>
     <package name='wget'/>
-    <package name='yum'/>
+    <package name='yum-utils'/>
     <package name='zip'/>
 </packages>
 
@@ -52,10 +52,16 @@
   </repositories>
    <commands>
     <command name='basesetup'>
-    /usr/bin/yum-config-manager --disable base
-    /usr/bin/yum-config-manager --disable updates
-    /usr/bin/yum-config-manager --disable extras
-    /usr/sbin/setenforce 0
+    /bin/yum-config-manager --disable base
+    /bin/yum-config-manager --disable updates
+    /bin/yum-config-manager --disable extras
+    /sbin/setenforce 0
+    /bin/systemctl stop NetworkManager.service
+    /bin/systemctl disable NetworkManager.service
+    /bin/systemctl enable network.service
+    /bin/systemctl start network.service
+	/bin/systemctl stop firewalld.service
+	/bin/systemctl disable firewalld.service   
     </command>
    
   </commands> 
