@@ -56,7 +56,7 @@
     /usr/bin/yum-config-manager --disable updates
     /usr/bin/yum-config-manager --disable extras
     /usr/sbin/setenforce 0
-    /sbni/service sshd start
+    /sbin/service sshd start
     </command>
    
   </commands> 
