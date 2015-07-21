@@ -41,6 +41,7 @@
        <package name='git'/>
        <package name='gnuplot'/>
        <package name='gsl'/>
+       <package name='gtk2'/>
        <package name='imake'/>
        <package name='indent'/>
        <package name='intltool'/>
@@ -74,6 +75,7 @@
        <package name='pkgconfig'/>
        <package name='pygtk2'/>
        <package name='python-matplotlib'/>
+       <package name='python-ipython'/>
        <package name='rcs'/>
        <package name='scipy'/>
        <package name='subversion'/>
