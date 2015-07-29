@@ -12,3 +12,4 @@ files:
   "/etc/condor/config.d/63wn_atlas.config" :  "condor/63wn_atlas.config"
   "/home/osg/app/atlas_app/copysetup.sh" : "atlas/copysetup.sh"
   "/home/osg/app/atlas_app/local/setup.sh": "atlas/setup.sh"  
+  "/etc/hiera/profile.yaml" : "hiera/profile.yaml.atlas"

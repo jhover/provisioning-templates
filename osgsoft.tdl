@@ -1,0 +1,54 @@
+<template>
+  <name>osg</name>
+  <description>Adds OSG WN config general VM</description>
+
+  <packages>  
+    <package name='osg-ca-certs'/>
+    <package name='osg-wn-client'/>
+    <package name='yum-priorities'/>
+    <package name='cvmfs'/>
+    <package name='cvmfs-keys'/>
+    <package name='oasis-config'/>
+    <package name='voms'/>
+    <package name='globus-ftp-client'/>
+    <package name='globus-gass-transfer'/>
+    <package name='globus-io'/>
+    <package name='globus-gssapi-gsi'/>
+    <package name='globus-gss-assist'/>
+    <package name='globus-gsi-credential'/>
+    <package name='globus-gsi-cert-utils'/>
+
+
+
+
+
+  </packages>
+
+  <repositories>
+
+    <repository name='osg-el6-x86_64'>
+      <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/osg-el6-3.2/x86_64</url>
+      <signed>no</signed>
+    </repository>
+
+   
+    <repository name='epel'>
+     <url>http://dev.racf.bnl.gov/yum/snapshots/rhel6/epel-x86_64</url>
+      <signed>no</signed>
+    </repository>
+
+  </repositories>
+
+  <commands>
+    <command name='osgsetup'>
+      /sbin/chkconfig fetch-crl-boot on
+      /sbin/chkconfig fetch-crl-cron on
+      mkdir -p /home/osg/app
+      mkdir -p /home/osg/data
+      chmod ugo+r /etc/profile.d/osg.sh
+      chmod ugo+rwx /home/osg/app
+      chmod ugo+rwx /home/osg/data
+    </command>    
+  </commands>
+</template>
+
