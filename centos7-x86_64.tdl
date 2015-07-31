@@ -1,5 +1,5 @@
 <template>
-  <name>centos7-bare</name>
+  <name>centos7</name>
   <os>
     <rootpw>griddev</rootpw>
     <name>RHEL-7</name>
