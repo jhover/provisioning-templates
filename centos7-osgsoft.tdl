@@ -9,7 +9,7 @@
   <repositories>
   
     <repository name='epel7'>
-     <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/epel-x86_64</url>
+     <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/epel7-x86_64</url>
       <signed>no</signed>
     </repository>
 
