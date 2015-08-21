@@ -3,32 +3,17 @@
   <description>Adds repos and items for OSG software team.</description>
 
   <packages>  
-    <package name='osg-ca-certs'/>
-    <package name='osg-wn-client'/>
     <package name='yum-priorities'/>
-
   </packages>
 
   <repositories>
-
-    <repository name='osg-el7-x86_64'>
-      <url>http://dev.racf.bnl.gov/yum/snapshots/7Workstation/osg-el6-3.2/x86_64</url>
-      <signed>no</signed>
-    </repository>
-
-   
-    <repository name='epel'>
+  
+    <repository name='epel7'>
      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/epel-x86_64</url>
       <signed>no</signed>
     </repository>
 
   </repositories>
 
-  <commands>
-    <command name='osgsetup'>
-      /sbin/chkconfig fetch-crl-boot on
-      /sbin/chkconfig fetch-crl-cron on
-    </command>    
-  </commands>
 </template>
 
