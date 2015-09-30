@@ -1,0 +1,49 @@
+<template>
+  <name>cloud</name>
+  <description>Adds cloudconfig package with default userdata and puppet</description>
+
+<packages>  
+    <package name='puppet'/>
+    <package name='cloud-init'/>
+    <package name='provisioning-config'/>
+</packages>
+
+  <repositories>
+ 
+    <repository name='racf-grid-testing'>
+    	<url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64/</url>
+      	<signed>no</signed>
+	</repository>
+
+    <repository name='puppetlabs-products'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-products-2014-06-05/</url>
+      <signed>no</signed>
+    </repository>
+
+    <repository name='puppetlabs-deps'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-deps-2014-06-05/</url>
+      <signed>no</signed>
+    </repository>
+	
+    <repository name='epel'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel-x86_64/</url>
+      <signed>no</signed>
+    </repository>
+    
+    <repository name='rdo-icehouse'>
+       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/rdo-icehouse/</url>
+      <signed>no</signed>
+    </repository>
+    
+
+  </repositories>
+  
+  <commands>
+    <command name='cloudsetup'>
+	    /sbin/chkconfig cloud-init on
+	    /sbin/chkconfig --add mounthome
+    </command>
+   
+  </commands> 
+
+</template>

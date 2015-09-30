@@ -3,7 +3,7 @@
   <os>
     <rootpw>griddev</rootpw>
     <name>CentOS-5</name>
-    <version>11</version>
+    <version>U11</version>
     <arch>x86_64</arch>
     <install type='iso'>
       <iso>http://mirror.bnl.gov/scientific/5x/iso/x86_64/dvd/SL.511.110414.DVD.x86_64.disc1.iso</iso>
