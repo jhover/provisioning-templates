@@ -16,25 +16,21 @@
 	</repository>
 
     <repository name='puppetlabs-products'>
-       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-products-2014-06-05/</url>
+       <url>http://yum.puppetlabs.com/el/5/products/x86_64</url>
       <signed>no</signed>
     </repository>
 
     <repository name='puppetlabs-deps'>
-       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/puppetlabs-deps-2014-06-05/</url>
+       <url>http://yum.puppetlabs.com/el/5/dependencies/x86_64</url>
       <signed>no</signed>
     </repository>
 	
     <repository name='epel'>
-       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/epel-x86_64/</url>
+       <url>http://mirror.bnl.gov/fedora-epel/5Client/x86_64/</url>
       <signed>no</signed>
     </repository>
     
-    <repository name='rdo-icehouse'>
-       <url>http://dev.racf.bnl.gov/yum/snapshots/6Workstation/rdo-icehouse/</url>
-      <signed>no</signed>
-    </repository>
-    
+   
 
   </repositories>
   
