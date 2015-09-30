@@ -1,0 +1,62 @@
+<template>
+  <name>centos5</name>
+  <os>
+    <rootpw>griddev</rootpw>
+    <name>CentOS-5</name>
+    <version>11</version>
+    <arch>x86_64</arch>
+    <install type='iso'>
+      <iso>http://mirror.bnl.gov/scientific/5x/iso/x86_64/dvd/SL.511.110414.DVD.x86_64.disc1.iso</iso>
+    </install>
+  </os>
+  <description>Bare CentOS 5 with minimal inclusions. No config.</description>
+
+<packages>
+    
+    <package name='bash'/>
+    <package name='bind-utils'/>
+    <package name='curl'/>
+    <package name='dhclient'/>
+    <package name='emacs'/>
+    <package name='expect'/>
+    <package name='git'/>
+    <package name='lsof'/>
+    <package name='ntp'/>
+    <package name='openssh-clients'/>
+    <package name='openssh-server'/>
+    <package name='passwd'/>
+    <package name='pexpect'/>
+    <package name='redhat-lsb'/>
+    <package name='rpm'/>
+    <package name='rpm-libs'/>
+    <package name='telnet'/>
+    <package name='unzip'/>
+    <package name='vim-enhanced'/>
+    <package name='wget'/>
+    <package name='yum'/>
+    <package name='yum-utils'/>
+    <package name='zip'/>
+</packages>
+
+  <repositories>
+
+    <repository name='centos5-x86_64-base'>
+      <url>http://mirror.bnl.gov/scientific/5x/x86_64/SL/</url>
+      <signed>no</signed>
+    </repository>
+    
+ 
+  </repositories>
+   <commands>
+    <command name='basesetup'>
+    /usr/bin/yum-config-manager --disable base
+    /usr/bin/yum-config-manager --disable updates
+    /usr/bin/yum-config-manager --disable extras
+    /usr/sbin/setenforce 0
+    /sbin/service sshd start
+    </command>
+   
+  </commands> 
+ 
+
+</template>

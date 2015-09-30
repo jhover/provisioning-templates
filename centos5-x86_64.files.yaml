@@ -1,0 +1,8 @@
+files:
+  "/etc/selinux/config" : "sysconfig/selinux"
+  "/etc/sysconfig/network-scripts/ifcfg-eth0" : "sysconfig/ifcfg-eth0"
+  "/etc/hiera/local.yaml" : "hiera/local.yaml.bnl"
+
+
+
+  
