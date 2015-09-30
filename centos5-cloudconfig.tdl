@@ -11,7 +11,7 @@
   <repositories>
  
     <repository name='racf-grid-testing'>
-    	<url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/6Workstation/x86_64/</url>
+    	<url>http://dev.racf.bnl.gov/yum/grid/testing/rhel/5Client/x86_64/</url>
       	<signed>no</signed>
 	</repository>
 
