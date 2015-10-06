@@ -6,7 +6,7 @@ classes:
  - authorized_keys
  - selinux
  - cvmfs
- - condor
+ - htcondor
 
 authorized_keys::authorized_keys:
     John.Hover:
