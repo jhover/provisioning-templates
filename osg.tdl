@@ -17,11 +17,6 @@
     <package name='globus-gss-assist'/>
     <package name='globus-gsi-credential'/>
     <package name='globus-gsi-cert-utils'/>
-
-
-
-
-
   </packages>
 
   <repositories>

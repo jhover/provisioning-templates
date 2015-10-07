@@ -59,6 +59,7 @@
 
   <commands>
     <command name='atlassetup'>
+      mkdir -p /home/osg/app/atlas_app/local
       chmod ugo+rx /home/osg/app/atlas_app/copysetup.sh
       chmod ugo+rx /home/osg/app/atlas_app/local/setup.sh
       mkdir -p /home/cvmfs
