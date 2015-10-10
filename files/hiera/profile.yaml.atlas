@@ -65,11 +65,11 @@ cvmfs::mount:
     atlas-nightlies.cern.ch:
         {}
 
-htcondor::is_execute:  'true'
+htcondor::is_execute:  true
 htcondor::collector_host: 'gridtest06.racf.bnl.gov'
 htcondor::collector_port:  29679
 htcondor::condor_password: 'changeme'
-htcondor::randomize_collector_port: 'true'
+htcondor::randomize_collector_port: true
 htcondor::collector_port_low: 29661
 htcondor::collector_port_high: 29680
 

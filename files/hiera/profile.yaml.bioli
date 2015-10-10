@@ -55,18 +55,18 @@ selinux::mode: 'permissive'
 
 
 # Head node central manager and schedd
-htcondor::is_execute:  'false'
-htcondor::is_submit:  'true'
-htcondor::is_manager:  'true'
+htcondor::is_execute:  false
+htcondor::is_submit:  true
+htcondor::is_manager:  true
 htcondor::condor_password: 'changeme'
 
 
 # Execute host
-#htcondor::is_execute:  'true'
+#htcondor::is_execute:  true
 #htcondor::collector_host: 'gridtest06.racf.bnl.gov'
 #htcondor::collector_port:  9618
 #htcondor::condor_password: 'changeme'
-#htcondor::randomize_collector_port: 'false'
+#htcondor::randomize_collector_port: false
 
       
 
