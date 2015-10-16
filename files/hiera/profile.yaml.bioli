@@ -7,6 +7,9 @@ classes:
  - selinux
  - htcondor
  - accounts
+# - nfs::server 
+# - nfs::client
+
 
 authorized_keys::authorized_keys:
     John.Hover:
