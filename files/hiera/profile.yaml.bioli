@@ -8,8 +8,8 @@ classes:
     - selinux
     - htcondor
     - accounts
-    - nfs::server 
-# - nfs::client
+#    - nfs::server 
+    - nfs::client
 
 
 authorized_keys::authorized_keys:
@@ -36,18 +36,19 @@ authorized_keys::rolesauth:
 
 # racf-htcondor
 # Head node central manager and schedd
-htcondor::is_execute:  false
-htcondor::is_submit:   true
-htcondor::is_manager:  true
-htcondor::condor_password: 'changeme'
+#htcondor::is_execute:  false
+#htcondor::is_submit:   true
+#htcondor::is_manager:  true
+#htcondor::condor_password: 'changeme'
 
 
 # Execute host
-#htcondor::is_execute:  true
-#htcondor::collector_host: '172.11.0.74'
-#htcondor::collector_port:  9618
-#htcondor::condor_password: 'changeme'
-#htcondor::randomize_collector_port: false
+htcondor::is_execute:  true
+htcondor::collector_host: '172.11.0.74'
+htcondor::collector_port:  9618
+htcondor::condor_password: 'changeme'
+htcondor::randomize_collector_port: false
+htcondor::use_slotusers: false
 
 # deric-accounts
 #######################################################

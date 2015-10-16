@@ -97,6 +97,11 @@
     </repository>
   </repositories>    
 
+ <commands>
+    <command name='biolisetup'>
+      /bin/mkdir -p /home/nfs
+    </command>
+ </commands> 
 
 
 </template>
