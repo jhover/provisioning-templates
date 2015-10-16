@@ -57,10 +57,6 @@ authorized_keys::rolesauth:
     - John.DeStefano
     - Alexander.Zaytsev
 
-motd_messages:
-  "motd2":
-    message: "This is the Hiera local message."
-    order: '101'
 
 selinux::mode: 'permissive' 
 
