@@ -49,7 +49,8 @@ htcondor::collector_port:  9618
 htcondor::condor_password: 'changeme'
 htcondor::randomize_collector_port: false
 htcondor::use_slotusers: false
-
+htcondor::use_dedicated_scheduler: true
+htcondor::dedicated_scheduler: '172.11.0.74'
 
 # deric-accounts
 #######################################################
