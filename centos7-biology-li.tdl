@@ -2,6 +2,10 @@
   <name>biology-li</name>
   <description>Adds Biology-related software.</description>
 
+
+
+
+
   <packages>
        <package name='R'/>
        <package name='ant'/>
@@ -83,6 +87,10 @@
        <package name='systemtap'/>
        <package name='sympy'/>
        <package name='units'/>
+       
+       <package name='imod'/>
+       <package name='relion'/>
+       <package name='ctffind'/>
   </packages>
 
   <repositories>   
@@ -95,11 +103,20 @@
       <url>http://research.cs.wisc.edu/htcondor/yum/stable/rhel7</url>
       <signed>no</signed>
     </repository>
-  </repositories>    
+  
+    <repository name='bnl-biology-x86_64'>    
+      <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/bnl-biology-x86_64</url>
+      <signed>no</signed>
+    </repository>
+  
+  </repositories> 
+  
+     
 
  <commands>
     <command name='biolisetup'>
       /bin/mkdir -p /home/nfs
+      /usr/bin/chmod ugo+rwx /home/nfs
     </command>
  </commands> 
 
