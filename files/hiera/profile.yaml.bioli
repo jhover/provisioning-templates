@@ -80,7 +80,7 @@ accounts::users:
              comment: "zuanning.yuan@stonybrook.edu"
 
     jhover:
-        uid:3002
+        uid: 3002
         comment: "John Hover"
         groups: ["biogroup"]
         shell: "/bin/bash"
