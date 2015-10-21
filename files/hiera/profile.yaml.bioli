@@ -44,13 +44,14 @@ authorized_keys::rolesauth:
 
 # Execute host
 htcondor::is_execute:  true
-htcondor::collector_host: '172.11.0.74'
+htcondor::collector_host: '172.11.0.76'
 htcondor::collector_port:  9618
 htcondor::condor_password: 'changeme'
 htcondor::randomize_collector_port: false
 htcondor::use_slotusers: false
 htcondor::use_dedicated_scheduler: true
-htcondor::dedicated_scheduler: '172.11.0.74'
+# Must be a hostname, not IP
+htcondor::dedicated_scheduler: 'host-172-11-0-76.openstack.bnl.gov'
 
 # deric-accounts
 #######################################################
