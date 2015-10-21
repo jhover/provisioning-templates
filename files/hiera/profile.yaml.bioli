@@ -58,7 +58,7 @@ accounts::groups:
         gid: 2000
 
 accounts::users:
-    ruda:
+    rsantos:
         uid: 3000
         comment: "Ruda"
         groups: ["biogroup"]
@@ -81,7 +81,7 @@ accounts::users:
 
     jhover:
         uid:3002
-        comment: "John"
+        comment: "John Hover"
         groups: ["biogroup"]
         shell: "/bin/bash"
         pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
