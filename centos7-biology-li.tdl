@@ -17,6 +17,7 @@
        <package name='bison'/>
        <package name='byacc'/>
        <package name='bzr'/>
+       <package name='bzip2'/>
        <package name='chrpath'/>
        <package name='cmake'/>
        <package name='compat-gcc-34'/>
@@ -87,10 +88,14 @@
        <package name='systemtap'/>
        <package name='sympy'/>
        <package name='units'/>
+       <package name='xorg-x11-xauth'/>
+       <package name='xterm'/>
        
        <package name='imod'/>
        <package name='relion'/>
        <package name='ctffind'/>
+       <package name='eman'/>
+       
   </packages>
 
   <repositories>   
