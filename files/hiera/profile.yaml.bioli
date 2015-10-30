@@ -62,7 +62,7 @@ accounts::groups:
 accounts::users:
     rsantos:
         uid: 3000
-        comment: "Ruda"
+        comment: "Ruda Luna"
         groups: ["biogroup"]
         shell: "/bin/bash"
         pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
@@ -72,7 +72,7 @@ accounts::users:
             comment: "ruda.santos@stonybrook.edu"
     zuanning:
         uid: 3001
-        comment: "Zuanning"
+        comment: "Zuanning Yuan"
         groups: ["biogroup"]
         shell: "/bin/bash"
         pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
