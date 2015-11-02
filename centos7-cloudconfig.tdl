@@ -6,6 +6,7 @@
     <package name='puppet'/>
     <package name='cloud-init'/>
     <package name='provisioning-config'/>
+    <package name='s3cmd'/>
 </packages>
 
   <repositories>
