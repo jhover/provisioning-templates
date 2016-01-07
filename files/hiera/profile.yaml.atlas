@@ -66,7 +66,7 @@ cvmfs::mount:
         {}
 
 htcondor::is_execute:  true
-htcondor::collector_host: 'gridtest06.racf.bnl.gov'
+htcondor::collector_host: 'gridtest05.racf.bnl.gov'
 htcondor::collector_port:  29679
 htcondor::condor_password: 'changeme'
 htcondor::randomize_collector_port: true
