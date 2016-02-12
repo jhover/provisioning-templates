@@ -1,0 +1,93 @@
+#
+# Hiera local.yaml
+# This is intended to be adjust for *build-time* customizations. 
+#
+classes: 
+ - authorized_keys
+ - selinux
+ - cvmfs
+ - htcondor
+
+authorized_keys::authorized_keys:
+    John.Hover:
+        key: AAAAB3NzaC1yc2EAAAABIwAAAQEA4qnUbnuRSwG1Y+WO8Jb7qRDH7AdcyJFxqSexRW9pQ8sA8ZriZLR4NvMKTVtnFjEJ1hVPmVB2pNB4iREHZNqZ7E3POMT+81YxCnOcfTACmFxCSwN+IhaRUk93AdStDsM/+vPsShFii7eUU6x4Ykz5zdfBdL9FbV0VZyBVE8owcJiJpDGFRNTczmYVFlvQGZYSXhpnXwWb/N6kofvdyCHzwVJtiSnjaGxaD4SmSkfT/51g65KqN4TdEDhpl/3elqQB2Qhk8ilw960EcUM+ZwFmHQRQCLy7G7dUYnKJZoXhVN6L3GT0hB2OFJToO2YxnM7Lpnid8bWYPSyssUl+eFgATw==
+        type: ssh-rsa
+
+    Jose.Caballero:
+        key: AAAAB3NzaC1yc2EAAAABIwAAAQEAyNVVQHhzAoTTE8yfeU8tRMqOQ6MNt6Qz+xJgUj40bVKsRX06Ji9CpGsTB4c0vaEicguQ/awiMpc355CEsfBh1xPzkjh7kzsKzTXsj7dTBroIgwrxrKOHQDVEe2TAh++ebhvfn641LBRHov4j/dk6a9F9YqQVW0H4JdT8fmTFf5GYwI3usNiqCxxRmgmOUPl9/X9E/6A7hCnX4Ma5quu06KHgcrdxBUh1bwMx2ebgQ+haNT1ExSkARwrnsgzSkuLeI+1XUGtv8ZajP5JZrcDjEFlzYmFDy82PYgjgfGepUxC6lBgVOevhe6ZHqT/1V1qiAWvRslPH91Lc+7W88ETTeQ==
+        type: ssh-rsa
+
+    Xin.Zhao:
+        key: AAAAB3NzaC1yc2EAAAABIwAAAIEAzgZHsVndNrrH/BpyUTBGw/fwrSugwQu2NRhh2RDMn/3gYHrzmhI0E9PLtHQp1+4y90KI0SQVBaEkPQxtavyx2YilxG4pKRKMPDRZ8k/ZZWj+NqbJj0uwPcl8UBP8PWUfJaZDKLcv0e97gBUWGTaa5713Mq4YuPrR7EyO/rkVxMU=
+        type: ssh-rsa
+
+    Hiro.Ito:
+        key: AAAAB3NzaC1kc3MAAACBANbN2uHa0qBny+KyEXsONLGfL0ApmjBlwUTFzmPBujTqxd0hC/e66wGJMvGmgAcONrNqGbnLlkDGfEoVSxcUtwtdz6y1IQmv+QePe+oO3JsER3BJYsGW6rVWgHmiqgE5JN25PqwPLcxQ1blIlEqhGAZWObuQ3+J+LB+L05SKx2upAAAAFQCismlz9yAk5EQqG2FVEG3HN4sC5wAAAIBkET1hx27nk+RlrpZ6G9CEAoP21Pfb2YVp5TBeTyPm14i/UyPehgyoAkM852+04vpofNh+QYPT7DixIvRCONsYzC6vtx3R6GGmp0jNJ/VxhBBlo2nfa8Hb4QfjVdkQjAr15W+OLNizIocXqe2jVqX0BVyOJFVRWS+Wv3IWIQUTOgAAAIAuiA9STjv7EawR1HNsHZOBSeVxzs7+A3lJLUj507Y4Qshi1V319IJeAsGTxsqXtZmCCoJo9MWfW99WERV/qrcMGFuFd2N4nHWbV+cUPyVxIyK+oxa1+lzMlDxPVr/zjsx5eNVMd/Zd2wavHZbt+uEgxv/teDJs82rz1zZsoU8wBg==
+        type: ssh-dss	    
+
+    Domenico.Giordano:
+        key: AAAAB3NzaC1yc2EAAAADAQABAAABAQDIl8Ej7b1ZysLU2asDaF3u5M5SksfAF1cCEGVBKNWHwTDLyMBSTpe0MCLs8BvUDzzcKJ/T+fSn7WO/xusUFEABC7Pn60DwBWLgkLH0luIuO7vnyf6ayFtLJsvPhU4xkD07P14etzxNQWTBad31PQG4lSwaKBgcw46uUFN1Prdfeuk+932h3NNaimxqLAlB1ZDCI9VVQCmZ3E9VpMX90mXBaMFkCyeBxVFZuJlSm6KR9YLF2FgHxMmi2d8lo0n20lc0UNq5nDRQVgCqLf2VlAkcw4AOI0WwjGTwaeOS2op/KsUASkcNatJjH9tSrK/p65QJsWyFt4obYlb48gOJVLfb
+        type: ssh-rsa
+
+    Cristavo.Cordero:
+        key:  AAAAB3NzaC1yc2EAAAABIwAAAQEA5jtTnfhRMT+2gmhB/QsmsxdeWnrKvfxVsbqqzcLl2BoYLaNG9AB32PDY800owGL3oujSOI6/EPeGBnf6EQEHqn1QexYSIUIy4EmgoRr0TP0Q8ALemLJ/P07jB0DTvAWHYMHo1oPmLTEB4t5VPMylcuqDJtidXCMNYbJV9O0GJ7drCFR5sMp9P1JtsoGxb+uiMY7wcKCew1bVzv/5L2670Sf30QLYj5tus4PhGoFLGa3+pHBAqk5B4sJlZm4rUkGnrfASYpmTKR8nKaa300s1ORCDg6Xm1jCuHhofxlrv4x4OU2x7BVetbmH7sTarlKuuDf6p+X+0lEVr4qJ4jBlpXQ== 
+        type: ssh-rsa
+
+   
+        
+authorized_keys::rolesusers:
+    root:
+        home: "/root"
+        roles:
+            - Role1
+
+authorized_keys::rolesauth:
+    Role1:
+    - John.Hover
+    - Xin.Zhao
+    - Jose.Caballero
+    - Hiro.Ito
+    - Cristavo.Cordero
+    - Domenico.Giordano
+
+
+
+motd_messages:
+  "motd2":
+    message: "This is the Hiera local message."
+    order: '101'
+
+
+selinux::mode: 'permissive' 
+
+cvmfs::cvmfs_cache_base: '/home/cvmfs'
+cvmfs::cvmfs_http_proxy: 'http://cvmfs-external.racf.bnl.gov:3128;DIRECT'
+
+cvmfs::domain:
+    cern.ch:
+        cvmfs_server_url: "http://cvmfs.racf.bnl.gov:8000/cvmfs/@org@;http://cvmfs-stratum-one.cern.ch:8000/opt/@org@;http://cernvmfs.gridpp.rl.ac.uk:8000/opt/@org@"
+        cvmfs_public_key: '/etc/cvmfs/keys/cern.ch/cern.ch.pub:/etc/cvmfs/keys/cern.ch/cern-it1.cern.ch.pub:/etc/cvmfs/keys/cern.ch/cern-it3.cern.ch.pub'
+
+cvmfs::mount:
+    atlas.cern.ch:
+        cvmfs_server_url: "http://cvmfs.racf.bnl.gov:8000/cvmfs/@org@;http://cvmfs-stratum-one.cern.ch:8000/opt/@org@;http://cernvmfs.gridpp.rl.ac.uk:8000/opt/@org@"
+        cvmfs_public_key: '/etc/cvmfs/keys/cern.ch/cern.ch.pub:/etc/cvmfs/keys/cern.ch/cern-it1.cern.ch.pub:/etc/cvmfs/keys/cern.ch/cern-it3.cern.ch.pub'
+        
+    atlas-condb.cern.ch:
+        {} 
+    atlas-nightlies.cern.ch:
+        {}
+
+htcondor::is_execute:  true
+htcondor::collector_host: 'gridtest05.racf.bnl.gov'
+htcondor::collector_port:  29679
+htcondor::condor_password: 'changeme'
+htcondor::randomize_collector_port: true
+htcondor::collector_port_low: 29661
+htcondor::collector_port_high: 29680
+
+
+
+      
+
+  
