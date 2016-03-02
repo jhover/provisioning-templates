@@ -92,7 +92,7 @@ config_slot_users() {
 	# Ensure slot account for each CPU
 	numcpus=`cat /proc/cpuinfo | grep "^processor" | wc -l`
 	while [ $numcpus -gt 0 ]; do
-		/usr/bin/useradd "slot$numcpus"
+		/usr/sbin/useradd "slot$numcpus"
 		numcpus=$(($numcpus-1))
 	done
 }
