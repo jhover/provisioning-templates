@@ -1,2 +1,0 @@
-files:
-  "/etc/condor/config.d/63wn_atlas.config" :  "condor/64wn_atlas_benchmarks.config"
