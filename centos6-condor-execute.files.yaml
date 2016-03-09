@@ -1,0 +1,6 @@
+files:
+  "/etc/init.d/condorconfig" :  "condorstd/condorconfig.init"
+  "/etc/sysconfig/condorconfig" : "condorstd/condorconfig.sysconfig"
+  "/usr/libexec/jobwrapper.sh" : "condorstd/jobwrapper.sh"
+
+    
