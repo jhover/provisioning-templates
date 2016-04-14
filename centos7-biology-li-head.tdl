@@ -2,10 +2,6 @@
   <name>biology-li</name>
   <description>Adds Biology-related software.</description>
 
-
-
-
-
   <packages>
        <package name='R'/>
        <package name='ant'/>
@@ -89,8 +85,7 @@
        <package name='sympy'/>
        <package name='units'/>
        <package name='xorg-x11-xauth'/>
-       <package name='xterm'/>
-       
+       <package name='xterm'/>      
        <package name='imod'/>
        <package name='relion'/>
        <package name='ctffind'/>
