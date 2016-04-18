@@ -2,10 +2,6 @@
   <name>biology-li-execute</name>
   <description>Adds Biology-related software.</description>
 
-
-
-
-
   <packages>
        <package name='R'/>
        <package name='ant'/>

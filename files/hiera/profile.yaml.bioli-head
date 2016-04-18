@@ -70,7 +70,7 @@ accounts::users:
             type: "ssh-dss"
             key: "AAAAB3NzaC1kc3MAAACBAKLdq+5bXLmSY9mzA/UrM10z2MTUUHy16RVI+D5TEYzTuo0tSqjtZHQwaS3pvpihBYCIueMAOeulbSp2ZLMYQHPy5HrlDpaNo0NQr3oZOWXTjeKxbHArdkXVhGF2F/e4EkzVJa0N9EDb+l7h7byrvz2UpWzV7BSNkrmULwEPJ91vAAAAFQDRugTQ7b7PbpSQu60Wq5eQ0yM2JQAAAIAk0P/HbL9Kdyf7Aiz6i3tWir4Vzq1BJWrhihJTGkm6GvSAv6Az2/pnz5M/97jrHXBzF9a/bOvjCLNKP3R78AvP964G/iNbtoHwKAfXpJtoVm2Y9Bpzq3c1tFshbNCNyCuUBZpfIK0DjZWXl+/47dPs1EqRZVaaramYnSCC95WpIQAAAIEAgReOSVIrXhNdWImIQdHa5mWfkVZBB8TPCP1FU9CVgjynpVnZrCL5VWZlDd3MO4nvgDA7tNuowCl8zjG6/gT3vAXWW57FVYVCKn4K+zb27kEfuE1/XX/HFF7SkPEZ6eONWvjmnZ9HPRIc7YfrgdUVMhE4T8z7K9MXdAUNh3ALsJI="
             comment: "ruda.santos@stonybrook.edu"
-    zuanning:
+    zyuan:
         uid: 3001
         comment: "Zuanning Yuan"
         groups: ["biogroup"]
