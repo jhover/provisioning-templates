@@ -25,6 +25,9 @@ authorized_keys::authorized_keys:
         key: AAAAB3NzaC1kc3MAAACBANbN2uHa0qBny+KyEXsONLGfL0ApmjBlwUTFzmPBujTqxd0hC/e66wGJMvGmgAcONrNqGbnLlkDGfEoVSxcUtwtdz6y1IQmv+QePe+oO3JsER3BJYsGW6rVWgHmiqgE5JN25PqwPLcxQ1blIlEqhGAZWObuQ3+J+LB+L05SKx2upAAAAFQCismlz9yAk5EQqG2FVEG3HN4sC5wAAAIBkET1hx27nk+RlrpZ6G9CEAoP21Pfb2YVp5TBeTyPm14i/UyPehgyoAkM852+04vpofNh+QYPT7DixIvRCONsYzC6vtx3R6GGmp0jNJ/VxhBBlo2nfa8Hb4QfjVdkQjAr15W+OLNizIocXqe2jVqX0BVyOJFVRWS+Wv3IWIQUTOgAAAIAuiA9STjv7EawR1HNsHZOBSeVxzs7+A3lJLUj507Y4Qshi1V319IJeAsGTxsqXtZmCCoJo9MWfW99WERV/qrcMGFuFd2N4nHWbV+cUPyVxIyK+oxa1+lzMlDxPVr/zjsx5eNVMd/Zd2wavHZbt+uEgxv/teDJs82rz1zZsoU8wBg==
         type: ssh-dss	    
    
+    Will.Kellogg:
+        key: AAAAB3NzaC1yc2EAAAABIwAAAQEA77oXUwZMSUPLws5iR2JU+gNZifEUE134hsTbDDapHXwhX51M6PIYeYS/19Xy8doLEJDWyY6Mbrpj73i40BE8Hd6wi9qEGRW8n+CJqzAn/ovKWAtyQ+Gd5Ikb1O9zmlnCCYL/+1Rul/BRwZs2g6eYcpVV8+g7SpQnBLzElNQ+MgYdmLBtjxuuVHDbZ6PUNAi8CXwyOt05buarZH2ZYtvud6t3rdI117ChiypDW3A1oj4eUzfWNRkKRQWa4J+BMrMpDEcP4E15q5OETu7O8+w5RdctnU691sh7qQOkNe6WAWtepft/FQL6jhpXy3UMbbouXL8q1qbK1VN9bdokUbXLEQ==
+        type: ssh-rsa
         
 authorized_keys::rolesusers:
     root:
@@ -38,6 +41,7 @@ authorized_keys::rolesauth:
     - Xin.Zhao
     - Jose.Caballero
     - Hiro.Ito
+    - Will.Kellogg
 
 motd_messages:
   "motd2":
