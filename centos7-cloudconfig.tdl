@@ -7,6 +7,7 @@
     <package name='cloud-init'/>
     <package name='provisioning-config'/>
     <package name='s3cmd'/>
+    <package name='python-swiftclient'/>
 </packages>
 
   <repositories>
