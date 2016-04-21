@@ -33,6 +33,8 @@
     <package name='unzip'/>
     <package name='vim-enhanced'/>
     <package name='wget'/>
+    <package name='xfsdump'/>
+    <package name='xfsprogs'/>
     <package name='yum'/>
     <package name='yum-utils'/>
     <package name='zip'/>
