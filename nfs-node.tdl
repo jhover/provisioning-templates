@@ -1,0 +1,18 @@
+<template>
+  <name>nfs-node</name>
+  <description>Adds NFS server capability.</description>
+
+  <packages>
+       <package name='nfs-utils'/>
+  </packages>
+     
+
+ <commands>
+    <command name='nfssetup'>
+      /bin/mkdir -p /home/nfs
+      /usr/bin/chmod ugo+rwx /home/nfs
+    </command>
+ </commands> 
+
+
+</template>
