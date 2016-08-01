@@ -1,0 +1,20 @@
+<template>
+  <name>osg</name>
+  <description>Adds OSG repos and WN client.</description>
+
+  <packages>  
+    <package name='yum-priorities'/>
+    <package name='osg-wn-client'/>
+  </packages>
+
+  <repositories>
+  
+    <repository name='epel7'>
+     <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/epel7-x86_64</url>
+      <signed>no</signed>
+    </repository>
+
+  </repositories>
+
+</template>
+
