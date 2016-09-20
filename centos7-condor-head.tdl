@@ -1,0 +1,109 @@
+<template>
+  <name>condor-head</name>
+  <description>Generic head node.</description>
+
+  <packages>
+       <package name='R'/>
+       <package name='ant'/>
+       <package name='autoconf'/>
+       <package name='automake'/>
+       <package name='babel'/>
+       <package name='bc'/>
+       <package name='binutils'/>
+       <package name='bison'/>
+       <package name='byacc'/>
+       <package name='bzr'/>
+       <package name='bzip2'/>
+       <package name='chrpath'/>
+       <package name='cmake'/>
+       <package name='compat-gcc-34'/>
+       <package name='compat-gcc-34-c++'/>
+       <package name='compat-gcc-34-g77'/>
+       <package name='cscope'/>
+       <package name='ctags'/>
+       <package name='cvs'/>
+       <package name='dejagnu'/>
+       <package name='diffstat'/>
+       <package name='doxygen'/>
+       <package name='ElectricFence'/>
+       <package name='elfutils'/>
+       <package name='emacs'/>
+       <package name='expect'/>
+       <package name='flex'/>
+       <package name='gcc'/>
+       <package name='gcc-c++'/>
+       <package name='gcc-fortran'/>
+       <package name='gcc-gfortran'/>
+       <package name='gcc-gnat'/>
+       <package name='gcc-java'/>
+       <package name='gcc-objc'/>
+       <package name='gcc-objc++'/>
+       <package name='gettext'/>
+       <package name='git'/>
+       <package name='gnuplot'/>
+       <package name='gsl'/>
+       <package name='gtk2'/>
+       <package name='imake'/>
+       <package name='indent'/>
+       <package name='intltool'/>
+       <package name='ipython'/>
+       <package name='jpackage-utils'/>
+       <package name='kdewebdev'/>
+       <package name='ksc'/>
+       <package name='libgfortran'/>
+       <package name='libtool'/>
+       <package name='make'/>
+       <package name='mercurial'/>
+       <package name='nasm'/>
+	   <package name='numpy'/>
+	   <package name='octave'/>
+       <package name='patch'/>
+       <package name='patchutils'/>
+       <package name='perl'/>
+       <package name='perl-core'/>
+       <package name='perl-Crypt-SSLeay'/>
+       <package name='perl-Date-Calc'/>
+	   <package name='perl-Date-Manip'/>
+	   <package name='perl-DBD-SQLite'/>
+	   <package name='perl-Frontier-RPC'/>
+	   <package name='perl-LDAP'/>
+	   <package name='perl-Mozilla-LDAP'/>
+	   <package name='perl-suidperl'/>
+       <package name='perltidy'/>
+       <package name='perl-XML-Dumper'/>
+       <package name='perl-XML-Grove'/>
+       <package name='perl-XML-Twig'/>
+       <package name='pkgconfig'/>
+       <package name='pygtk2'/>
+       <package name='python-matplotlib'/>
+       <package name='python-ipython'/>
+       <package name='rcs'/>
+       <package name='scipy'/>
+       <package name='subversion'/>
+       <package name='swig'/>
+       <package name='systemtap'/>
+       <package name='sympy'/>
+       <package name='units'/>
+       <package name='xorg-x11-xauth'/>
+       <package name='xterm'/>
+       <package name='ncbi-blast'/>      
+       
+  </packages>
+
+  <repositories>   
+    <repository name='epel7'>
+     <url>http://dev.racf.bnl.gov/yum/snapshots/rhel7/epel7-x86_64</url>
+      <signed>no</signed>
+    </repository>
+    
+    <repository name='htcondor-stable'>
+      <url>http://research.cs.wisc.edu/htcondor/yum/stable/rhel7</url>
+      <signed>no</signed>
+    </repository>
+  
+  
+  </repositories> 
+  
+     
+
+</template>
