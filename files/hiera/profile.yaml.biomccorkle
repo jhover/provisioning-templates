@@ -31,19 +31,10 @@ authorized_keys::rolesusers:
         roles:
             - Role1
 
-    mccorkle:
-        home: "/home/mccorkle"
-        roles:
-            - Role2
-
-
 authorized_keys::rolesauth:
     Role1:
     - John.Hover
     - Xin.Zhao
-    - Sean.McCorkle1
-    - Sean.McCorkle2
-    Role2:
     - Sean.McCorkle1
     - Sean.McCorkle2
 
