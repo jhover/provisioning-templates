@@ -1,0 +1,78 @@
+#
+# Hiera local.yaml
+# This is intended to be adjusted for *build-time* customizations. 
+#
+
+classes: 
+    - authorized_keys
+    - selinux
+    - htcondor
+    - accounts
+
+
+
+authorized_keys::authorized_keys:
+    John.Hover:
+        key: "AAAAB3NzaC1yc2EAAAABIwAAAQEA4qnUbnuRSwG1Y+WO8Jb7qRDH7AdcyJFxqSexRW9pQ8sA8ZriZLR4NvMKTVtnFjEJ1hVPmVB2pNB4iREHZNqZ7E3POMT+81YxCnOcfTACmFxCSwN+IhaRUk93AdStDsM/+vPsShFii7eUU6x4Ykz5zdfBdL9FbV0VZyBVE8owcJiJpDGFRNTczmYVFlvQGZYSXhpnXwWb/N6kofvdyCHzwVJtiSnjaGxaD4SmSkfT/51g65KqN4TdEDhpl/3elqQB2Qhk8ilw960EcUM+ZwFmHQRQCLy7G7dUYnKJZoXhVN6L3GT0hB2OFJToO2YxnM7Lpnid8bWYPSyssUl+eFgATw=="
+        type: "ssh-rsa"
+
+    Xin.Zhao:
+        key: "AAAAB3NzaC1yc2EAAAABIwAAAIEAzgZHsVndNrrH/BpyUTBGw/fwrSugwQu2NRhh2RDMn/3gYHrzmhI0E9PLtHQp1+4y90KI0SQVBaEkPQxtavyx2YilxG4pKRKMPDRZ8k/ZZWj+NqbJj0uwPcl8UBP8PWUfJaZDKLcv0e97gBUWGTaa5713Mq4YuPrR7EyO/rkVxMU="
+        type: "ssh-rsa"
+
+    Will.Kellogg:
+        key:  "AAAAB3NzaC1yc2EAAAABIwAAAQEA77oXUwZMSUPLws5iR2JU+gNZifEUE134hsTbDDapHXwhX51M6PIYeYS/19Xy8doLEJDWyY6Mbrpj73i40BE8Hd6wi9qEGRW8n+CJqzAn/ovKWAtyQ+Gd5Ikb1O9zmlnCCYL/+1Rul/BRwZs2g6eYcpVV8+g7SpQnBLzElNQ+MgYdmLBtjxuuVHDbZ6PUNAi8CXwyOt05buarZH2ZYtvud6t3rdI117ChiypDW3A1oj4eUzfWNRkKRQWa4J+BMrMpDEcP4E15q5OETu7O8+w5RdctnU691sh7qQOkNe6WAWtepft/FQL6jhpXy3UMbbouXL8q1qbK1VN9bdokUbXLEQ=="
+        type: "ssh-rsa"
+
+        
+authorized_keys::rolesusers:
+    root:
+        home: "/root"
+        roles:
+            - Role1
+
+
+authorized_keys::rolesauth:
+    Role1:
+    - John.Hover
+    - Xin.Zhao
+    - Will.Kellogg
+
+
+# racf-htcondor
+# Head node central manager and schedd
+#htcondor::is_execute:  false
+#htcondor::is_submit:   true
+#htcondor::is_manager:  true
+#htcondor::condor_password: 'changeme'
+
+
+# Execute host
+htcondor::is_execute:  true
+htcondor::collector_host: '172.11.0.142'
+htcondor::collector_port:  9618
+htcondor::condor_password: 'changeme'
+htcondor::randomize_collector_port: false
+htcondor::use_slotusers: true
+#htcondor::use_dedicated_scheduler: false
+# Must be a hostname, not IP
+#htcondor::dedicated_scheduler: 'host-172-11-0-142.openstack.bnl.gov'
+
+# deric-accounts
+#######################################################
+accounts::groups:
+    biogroup:
+        gid: 2000
+
+accounts::users:
+    jhover:
+        uid: 3002
+        comment: "John Hover"
+        groups: ["biogroup"]
+        shell: "/bin/bash"
+        pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
+        ssh_key:
+            type: "ssh-rsa"
+            key: "AAAAB3NzaC1yc2EAAAABIwAAAQEA4qnUbnuRSwG1Y+WO8Jb7qRDH7AdcyJFxqSexRW9pQ8sA8ZriZLR4NvMKTVtnFjEJ1hVPmVB2pNB4iREHZNqZ7E3POMT+81YxCnOcfTACmFxCSwN+IhaRUk93AdStDsM/+vPsShFii7eUU6x4Ykz5zdfBdL9FbV0VZyBVE8owcJiJpDGFRNTczmYVFlvQGZYSXhpnXwWb/N6kofvdyCHzwVJtiSnjaGxaD4SmSkfT/51g65KqN4TdEDhpl/3elqQB2Qhk8ilw960EcUM+ZwFmHQRQCLy7G7dUYnKJZoXhVN6L3GT0hB2OFJToO2YxnM7Lpnid8bWYPSyssUl+eFgATw=="
+            comment: "jhover@bnl.gov" 
+
