@@ -5,6 +5,8 @@
 classes: 
  - authorized_keys
  - selinux
+ - accounts
+ - htcondor
 
 authorized_keys::authorized_keys:
     John.Hover:
@@ -55,7 +57,39 @@ motd_messages:
 selinux::mode: 'permissive' 
 
 
+accounts::groups:
+    batchgroup:
+        gid: 2000
 
-      
+accounts::users:
+
+    jhover:
+        uid: 3001
+        comment: "John Hover"
+        groups: ["batchgroup"]
+        shell: "/bin/bash"
+        pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
+        ssh_key:
+            type: "ssh-rsa"
+            key: "AAAAB3NzaC1yc2EAAAABIwAAAQEA4qnUbnuRSwG1Y+WO8Jb7qRDH7AdcyJFxqSexRW9pQ8sA8ZriZLR4NvMKTVtnFjEJ1hVPmVB2pNB4iREHZNqZ7E3POMT+81YxCnOcfTACmFxCSwN+IhaRUk93AdStDsM/+vPsShFii7eUU6x4Ykz5zdfBdL9FbV0VZyBVE8owcJiJpDGFRNTczmYVFlvQGZYSXhpnXwWb/N6kofvdyCHzwVJtiSnjaGxaD4SmSkfT/51g65KqN4TdEDhpl/3elqQB2Qhk8ilw960EcUM+ZwFmHQRQCLy7G7dUYnKJZoXhVN6L3GT0hB2OFJToO2YxnM7Lpnid8bWYPSyssUl+eFgATw=="
+            comment: "jhover@bnl.gov" 
+
+    mccorkle:
+        uid: 3002
+        comment: "Sean McCorkle"
+        groups: ["batchgroup"]
+        shell: "/bin/bash"
+        pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
+        ssh_key:
+            type: "ssh-dsa"
+            key: "AAAAB3NzaC1kc3MAAACBAOZ1588UPio4SOUCRJHwLROVNPzMyntxQ+KC2LaUgMsshOIuInQyh+6PefF92ycJRV2fsd86b1n1TMLZLneKjANodvB4l+jY7AqWfjb0NnctNwKrHn3inAYxHds05scpXilF6BrU+6wNQVFEj4sjvEx8fqlcX9hinSMZztiWCesJAAAAFQCQE0CWKA5q0F4CZ7D7R4Cz8TwsJQAAAIEAyUL3YSrKiFgjzmsrjTtNYr5jFVCUXppUdgTBjewq9JqI0ZzjsvgAeoFwzQHS3H0QgZ3IsRDdMSoG5yZ6/Wul9i/dDg3KksKWC39QZvwgfmpu9CjNC2yZmIr3Z9ttXuN50rlfHF23L5EXNIlnPLS5lzr5yGjQBy6WxD5pUssoCb0AAACBANRDt4pCkW4vw+MmZbvE6qginUDD6XQzoeCenNuGQJtuLQUHY40aaARysERkuqpbLsqqjWwBOldlu5ntfB1xWP0lCVoYAnD2rOc5iOXAJoxNJk4ptt/UtMbkT1d70iXGIZf8SRwhbyLefaWGzTs5hBpskOp9zZUR43nZMDUGaIzt"
+            comment: "mccorkle@bnl.gov"
+
+
+# Head node central manager and schedd
+htcondor::is_execute:  false
+htcondor::is_submit:   true
+htcondor::is_manager:  true
+htcondor::condor_password: 'changeme'      
 
   
