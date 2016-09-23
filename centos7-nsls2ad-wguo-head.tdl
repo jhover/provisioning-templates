@@ -1,6 +1,6 @@
 <template>
-  <name>biology-blaby-head</name>
-  <description>Adds Biology-related software.</description>
+  <name>nsls2ad-wguo-head</name>
+  <description>NSLS2 Accelerator Devision Template</description>
 
   <packages>
        <package name='R'/>
@@ -110,7 +110,4 @@
     </repository>
   
   </repositories> 
-  
-     
-
 </template>
