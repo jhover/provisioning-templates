@@ -1,5 +1,5 @@
 <template>
-  <name>nsls2ad-wguo-head</name>
+  <name>nsls2ad-wguo-execute</name>
   <description>NSLS2 Accelerator Devision Template</description>
 
   <packages>
