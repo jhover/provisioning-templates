@@ -87,10 +87,6 @@
        <package name='xorg-x11-xauth'/>
        <package name='xterm'/>
        
-       <package name='mpich'/> 
-       <package name='mpich-devel'/>       
-       <package name='openmpi'/> 
-       <package name='openmpi-devel'/>
        <package name='elegant'/>
   	   <package name='OAGTclTk'/>
        <package name='SDDSEpicsToolKit'/>
