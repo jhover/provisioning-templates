@@ -87,6 +87,7 @@
        <package name='xorg-x11-xauth'/>
        <package name='xterm'/>
        
+       <package name='motif'/>
        <package name='mpich'/> 
        <package name='mpich-devel'/>       
        <package name='openmpi'/> 
