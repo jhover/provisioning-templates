@@ -86,7 +86,9 @@
        <package name='units'/>
        <package name='xorg-x11-xauth'/>
        <package name='xterm'/>
-       
+
+       <package name='compat-libgfortran-41'/>
+       <package name='tcsh'/>       
        <package name='motif'/>
        <package name='mpich'/> 
        <package name='mpich-devel'/>       
