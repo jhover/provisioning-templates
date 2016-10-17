@@ -64,16 +64,16 @@ accounts::groups:
         gid: 2000
 
 accounts::users:
-    wguo:
+    ahe:
         uid: 4000
-        comment: "Wen Guo"
+        comment: "An He"
         groups: ["batchgroup"]
         shell: "/bin/bash"
         pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
-        ssh_key:
+                ssh_key:
             type: "ssh-rsa"
-            key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCXC8tH7orqCg99qfTCalNERRqbvnXgzPCcJ/WdKZRpQ5MEcXsWXi+mQojD0OFL2myHEzc/DYGrxWS/FJdk0RySBbXFf6JrfHvvQj6vN/nd1yQLctJ92w1tHEoDb4FBgFazJNjIyll53mCB0KP268cQKo4y0+Qk23n22TjsbjO33s9Ax3kOrn1AB4LdJEHTykMlWMwmuPX24SyMc7ZaFHwjWOh5/jc6Bg5Wvt/mvWPKyGvd86tbfLxbYoQ5Djx/Q62WvflDYEF+TtjpynfnkSYxvYcF8h3dOkty649pLqIGGu/R58RDHFGMqCnfsrf8EhLAnF4tocWh2J4qFlBM8XGX"
-            comment: "wguo@bnl.gov"
+            key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCZBrPEJ8H3d0JVxs37vFm+zfvKzt+rozLHVzQHsjGaAL83Yw7Wqq4ML+SZRTkuS70mUV7xeooME7aETgzbAinnG1Wcqbr9AZJUqayIVGeplgzavWnijZzrWiQ9+EX9TAoVCWowXVmPTzQq58X1injyDloXn34F6EDzsgw76a6+hp7qSLxrRIiEZ9G5OIYnApy6kZdURZD3ajvfyYOfuRTW8HEvOva6cCTFi1NOxktUWOPIg2NnzRwrmCZyOcQb8ZefeDwajSjZl+JsiDzj4dxNpD+LffZzTjja56YcwRo50HPqF4No8j296rDESd+4SaPNMI8Czx8X9LxWi7uJ/2nD"
+            comment: "ahe@bnl.gov"
     jhover:
         uid: 4001
         comment: "John Hover"

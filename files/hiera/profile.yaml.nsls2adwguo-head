@@ -45,7 +45,7 @@ htcondor::condor_password: 'changeme'
 
 
 # Execute host
-#htcondor::is_execute:  true
+htcondor::is_execute:  true
 #htcondor::collector_host: '172.11.0.76'
 #htcondor::collector_port:  9618
 #htcondor::condor_password: 'changeme'
@@ -75,7 +75,7 @@ accounts::users:
     jhover:
         uid: 3001
         comment: "John Hover"
-        groups: ["biogroup"]
+        groups: ["batchgroup"]
         shell: "/bin/bash"
         pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
         ssh_key:
