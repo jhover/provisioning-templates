@@ -1,6 +1,6 @@
 <template>
-  <name>nsls2ad-wguo-head</name>
-  <description>NSLS2 Accelerator Devision Template</description>
+  <name>nsls2ad-ahe-head</name>
+  <description>NSLS2 Accelerator Devision Template An He</description>
 
   <packages>
        <package name='R'/>
@@ -38,8 +38,8 @@
        <package name='gcc-java'/>
        <package name='gcc-objc'/>
        <package name='gcc-objc++'/>
-       <package name='gedit'/>
        <package name='gettext'/>
+       <package name='gedit'/>
        <package name='git'/>
        <package name='gnuplot'/>
        <package name='gsl'/>
@@ -78,8 +78,6 @@
        <package name='pkgconfig'/>
        <package name='pygtk2'/>
        <package name='python-matplotlib'/>
-       <package name='python-matplotlib-tk'/>
-       <package name='python-matplotlib-qt4'/>
        <package name='python-ipython'/>
        <package name='rcs'/>
        <package name='scipy'/>
@@ -98,11 +96,8 @@
        <package name='mpich-devel'/>       
        <package name='openmpi'/> 
        <package name='openmpi-devel'/>
-       <package name='elegant'/>
-  	   <package name='OAGTclTk'/>
-       <package name='SDDSEpicsToolKit'/>
-       <package name='SDDSToolKit'/>
-	   <package name='mpi4py-mpich'/>
+
+       	   <package name='mpi4py-mpich'/>
        <package name='mpi4py-openmpi'/>
   </packages>
 
