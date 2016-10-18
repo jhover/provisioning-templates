@@ -70,7 +70,7 @@ accounts::users:
         groups: ["batchgroup"]
         shell: "/bin/bash"
         pwhash: "$6$mRMkgdPf$FNDZrVrCmKX/moK0CSb0qpIR6bRqUyeaWXVt1qPH.hV5xZ5.dJKr9cKzSl85tnCcneYZE14gFpWvCJYg2mw4p0"
-                ssh_key:
+        ssh_key:
             type: "ssh-rsa"
             key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQCZBrPEJ8H3d0JVxs37vFm+zfvKzt+rozLHVzQHsjGaAL83Yw7Wqq4ML+SZRTkuS70mUV7xeooME7aETgzbAinnG1Wcqbr9AZJUqayIVGeplgzavWnijZzrWiQ9+EX9TAoVCWowXVmPTzQq58X1injyDloXn34F6EDzsgw76a6+hp7qSLxrRIiEZ9G5OIYnApy6kZdURZD3ajvfyYOfuRTW8HEvOva6cCTFi1NOxktUWOPIg2NnzRwrmCZyOcQb8ZefeDwajSjZl+JsiDzj4dxNpD+LffZzTjja56YcwRo50HPqF4No8j296rDESd+4SaPNMI8Czx8X9LxWi7uJ/2nD"
             comment: "ahe@bnl.gov"
