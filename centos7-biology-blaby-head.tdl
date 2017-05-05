@@ -86,7 +86,9 @@
        <package name='units'/>
        <package name='xorg-x11-xauth'/>
        <package name='xterm'/>
-       <package name='ncbi-blast'/>      
+       <package name='ncbi-blast'/>
+       <package name='rubygem-crb-blast'/>
+       <package name='glibc.i686'/>        
        
   </packages>
 
