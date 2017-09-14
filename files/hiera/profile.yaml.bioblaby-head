@@ -94,7 +94,7 @@ accounts::users:
             comment: "jhover@bnl.gov" 
 
     dnguyen:
-        uid: 3002
+        uid: 4001
         comment: "Nam Nguyen"
         groups: ["biogroup"]
         shell: "/bin/bash"
