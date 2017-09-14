@@ -43,7 +43,6 @@ authorized_keys::rolesauth:
     - John.Hover
     - Xin.Zhao
     - Will.Kellogg
-    - Nam.Nguyen
     - Jose.Caballero
 
 # racf-htcondor
