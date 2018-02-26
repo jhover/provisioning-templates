@@ -1,5 +1,5 @@
 <template>
-  <name>nsls2ad-ahe-head</name>
+  <name>nsls2-dama-head</name>
   <description>NSLS2 Template</description>
 
   <packages>

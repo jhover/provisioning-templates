@@ -1,5 +1,5 @@
 <template>
-  <name>nsls2ad-ahe-execute</name>
+  <name>nsls2-dama-execute</name>
   <description>NSLS2 Template</description>
 
   <packages>
