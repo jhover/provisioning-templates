@@ -1,5 +1,6 @@
 
-Cloud config principles:
+Cloud config principles
+===================================================================================
 
 -- Use off-the shelf wherever possible. SL, cloud-init, puppet, rpm/yum
   -- This maximizes sysadmin familiarity with the resulting systems, both as hosts and as cloud VMs. 
@@ -10,7 +11,8 @@ Cloud config principles:
   -- This allows a few secret items (e.g. condor or db passwords ) to be baked into a private image, allowing the rest of the configuration to be done over public HTTP or via publically-shared configs. 
 
 
-General config strategy:
+General config strategy
+=====================================================================================
 
 1) Use imagefactory to build images. 
 
@@ -61,6 +63,54 @@ Installing for dependencies:
  rubygems                       noarch                1.3.7-1.el6                          sl63-x86_64-os                     205 k
 
 
+Openstack Workflow Process
+======================================================================================
 
+-- cp X.tdl files/hiera/profile.X.yaml -> Y.tdl files/hiera/profile.Y.yaml
+
+-- edit values for SSH keys, packages, template name. 
+
+-- commit to GIT
+
+-- check out updates to build host
+ cd provisioning-templates ; git pull ; cd ..
+
+-- edit templates/files for *passwords* and IP/Hostnames if needed.  
+
+-- create new imgfac.conf profile pointing to Y.tdl
+
+-- run VM build
+  imgfac-build -d -p bnl-rhel7-nsls2dama-head
+
+-- check new images, node new image id/path 
+list-images | sort 
+
+-- upload created image with label
+glance image-create 
+    --disk-format raw 
+    --container-format bare 
+    --name centos7-dama-head 
+    --file /var/lib/imagefactory/storage/63bf49dd-3c88-4662-b1d5-34d597dcc12f.body 
+    --is-public True 
+    --progress
+
+-- list flavors, decide
+nova flavor-list 
+
+-- launch vm
+nova boot --flavor 12 --image 17a34b8e-c573-48d6-920c-b4b450172b41 <label-for-instance>
+
+-- check running vms, note server id
+nova list
+
+-- check available IPs, note
+nova floating-ip-list
+
+-- attach IP to VM    
+nova floating-ip-associate 54343023-a2a0-4146-ab66-f5aba314431b 192.153.161.237
+
+-- delete VM
+
+nova delete 54343023-a2a0-4146-ab66-f5aba314431b
 
 
